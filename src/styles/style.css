@@ -1,0 +1,308 @@
+:root {
+    --font-serif: font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; 
+    --font-sans: Inter, -apple-system, sans-serif;
+    --font-mono: "Andale Mono",
+      "Ubuntu Mono", monospace;
+    font-family: var(--font-serif);
+  
+    --nav-height: 60px;
+    --footer-height: 650px;
+    --section-margin-bottom: 5rem;
+  
+    --pure-background-color: #8f2d56;
+    --pure-background-color-rgb: 143,45,86;
+    --primary-color: #218380;
+    --primary-color-rgb: 33, 131, 128;
+    --accent-color: #73d2de;
+    --accent-color-rgb: 115,210,220;
+    --heading-color: rgba(255, 255, 255, 0.7);
+    --text-color: #f2f2f2;
+    --text-color-rgb: 242, 242, 242;
+    --off-text-color: #e3e3e3;
+    --pure-text-color: #ffffff;
+    --background-without-opacity: rgba(0, 0, 0, 0.7);
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+    --works-on-accent-bg: var(--pure-background-color);
+    --semitransparent-bg: rgba(255, 255, 255, 0.08);
+    --footer-bg: var(--semitransparent-bg);
+    --noise-opacity: 0.15;
+  }
+  
+  /* * {
+    transition: color 300ms linear, background 300ms linear;
+    -webkit-transition: color 300ms linear, background 300ms linear;
+    -moz-transition: color 300ms linear, background 300ms linear;
+    -ms-transition: color 300ms linear, background 300ms linear;
+    -o-transition: color 300ms linear, background 300ms linear;
+  } */
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    touch-action: manipulation;
+    scroll-padding-top: var(--nav-height);
+    background: var(--pure-background-color);
+  }
+  
+  body,
+  html {
+    overflow-x: clip;
+  }
+  
+  body {
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: var(--pure-background-color);
+    background: linear-gradient(
+      to bottom,
+      rgba(var(--primary-color-rgb), 1) -50%,
+      rgba(var(--pure-background-color-rgb), 1.0) 150%
+    );
+    /**
+    //for noise
+    background:
+    linear-gradient(to bottom, rgba(var(--primary-color-rgb), 1) -250%, transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+    */
+    overscroll-behavior-y: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  ::selection {
+    background: var(--pure-text-color);
+    color: var(--primary-color);
+  }
+  
+  @supports (text-shadow: 0px 0px 2px var(--accent-color)) {
+    ::selection {
+      background: none;
+      text-shadow: 0px 0px 2px var(--pure-background-color);
+      color: var(--accent-color);
+    }
+  }
+  
+  #svelte {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  #home {
+    min-height: 100vh;
+  }
+  
+  .visible {
+    opacity: 1 !important;
+  }
+  
+  h1,
+  h2 {
+    font-weight: 400;
+    color: var(--text-color);
+  }
+  
+  p,
+  li {
+    color: var(--pure-text-color);
+    font-family: var(--font-sans);
+    font-size: 1.275rem;
+    line-height: 1.35;
+    /* letter-spacing: -.01rem; */
+    font-weight: 300;
+  }
+  
+  li {
+    margin-left: 1rem;
+    list-style-position: outside;
+    font-weight: 300;
+    line-height: 1.5;
+    /* margin-bottom: 0.5rem; */
+  }
+  
+  strong {
+    font-weight: 600;
+    font-weight: 500;
+    color: var(--pure-text-color);
+  }
+  
+  em {
+    font-style: italic;
+  }
+  
+  a {
+    color: var(--accent-color);
+    text-decoration: none;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.85rem;
+  }
+  
+  h3 {
+    font-size: 1.65rem;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+  }
+  
+  h5,
+  h6 {
+    font-size: 1.35rem;
+  }
+  
+  hr {
+    color: var(--accent-color);
+    opacity: 0.3;
+  }
+  
+  
+  .pulled-right {
+    margin-left: auto;
+    text-align: right;
+  }
+  
+  .page-overline {
+    font-family: var(--font-sans);
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 0.64px;
+    font-weight: 300;
+    margin-top: 1.25rem;
+    margin-bottom: -1.5rem;
+  }
+  
+  .page-title {
+    font-size: 9rem;
+    font-weight: 200;
+    margin: 2rem 0;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(var(--accent-color-rgb), 0.5);
+    overflow: hidden;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 5rem;
+    font-weight: 200;
+    margin: 2rem 0 1rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.5px solid var(--accent-color);
+    overflow: hidden;
+  }
+  
+  /* We set opacity of transitioning elements to 0 to prevent brief paint before opacity transitions 
+  But for users who prefer reduced motion, we don't want to apply this 
+  (they would never become visible because transitions never trigger) */
+  @media (prefers-reduced-motion: no-preference) {
+    .transition-title,
+    .transition-subtitle,
+    .transition-content,
+    .begin-invisible:not(.transitioned) {
+      opacity: 0;
+    }
+  }
+  
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  
+  .gradient-accented {
+    color: var(--accent-color);
+  }
+  
+  .accented {
+    color: var(--accent-color);
+  }
+  
+  .bolded {
+    font-weight: 500;
+  }
+  
+  .padding-bottom {
+    padding-bottom: 0.2rem;
+  }
+  
+  .border-top {
+    border-top: 1px solid var(--accent-color);
+    border-top: 0.5px solid var(--accent-color);
+    padding-top: 1.5rem;
+  }
+  
+  .border-bottom {
+    border-bottom: 1px solid var(--accent-color);
+    border-bottom: 0.5px solid var(--accent-color);
+    padding-bottom: 1.5rem;
+  }
+  
+  .no-border {
+    border: none;
+  }
+  
+  .block {
+    display: block;
+  }
+  
+  /* ALL INDEX.SVELTE PAGES HAVE THIS FOR THEIR MAIN TAG */
+  .main {
+    max-width: 868px;
+    width: 95%;
+    margin: 0 auto 4rem;
+    padding-top: var(--nav-height);
+  }
+  
+  /* SMALL DESKTOP BREAKPOINT */
+  /* TABLET BREAKPOINT */
+  @media screen and (max-width: 1068px) {
+    .page-title {
+      font-size: 6rem;
+      padding-bottom: 1rem;
+    }
+  }
+  
+  /* TABLET BREAKPOINT */
+  @media screen and (max-width: 768px) {
+    .page-title {
+      font-size: 3.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 568px) {
+    .top-level {
+      margin: 5vh auto 2.5vh;
+      text-align: left;
+    }
+  
+    .page-title {
+      font-size: 3.25rem;
+    }
+  }
+  
+  /* MOBILE BREAKPOINT */
+  @media screen and (max-width: 460px) {
+    .main {
+      margin-top: 1.5rem;
+    }
+  
+    .section-title {
+      font-size: 3rem;
+    }
+  }
+  
+  @media screen and (max-width: 360px) {
+    .section-title {
+      font-size: 2.5rem;
+    }
+  }

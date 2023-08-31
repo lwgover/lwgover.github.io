@@ -1,2 +1,48 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import Seo from '$lib/Seo.svelte';
+	import Header from '$lib/Sections/Header.svelte';
+    import About from '$lib/Sections/Header.svelte';
+	//import Projects from "$lib/Sections/Projects.svelte";
+	//import Blog from "$lib/Sections/Blog.svelte";
+	//import Awards from "$lib/Sections/Awards.svelte";
+
+	/**
+	 * @type {number}
+	 */
+	let pageWidth;
+	$: isMobile = pageWidth < 768;
+</script>
+
+<svelte:window bind:innerWidth={pageWidth} />
+<Seo />
+<main id="home">
+	<Header />
+    <About/>
+	<!--
+    <Projects projects={data.projects} />
+    <Awards awards={data.awards} {isMobile} />
+    <Blog posts={data.posts} {isMobile} /> 
+-->
+</main>
+
+<style>
+	main {
+		width: 100%;
+		margin: 0 auto;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		/* background-color: var(--primary-color); */
+		z-index: 100; /* This is over the nav */
+		position: relative;
+	}
+
+	/* On desktop, do the cool sticky footer that reveals on scroll */
+	/* @media screen and (min-width: 768px) {
+      main {
+        position: relative;
+      }
+    } */
+</style>

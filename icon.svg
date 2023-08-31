@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" x="0px" y="0px" viewBox="0 0 200 200" xml:space="preserve" xmlns:xsiw="220" height="140">
+    <style>
+        .background {fill: #8f2d56}
+        .logo {font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; font-size: 160px; font-style: normal; font-variant: normal; font-weight: 200; line-height: 56.4px; font-style: italic; color: #73d2de; font-stretch: ultra-condensed}
+  </style>
+    <rect x="0" y="00" width="220" height = "140" class="background"></rect>
+    <text x="15" y="122.5" class="logo" fill="#73d2de">LG</text>
+
+</svg>
