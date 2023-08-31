@@ -9,8 +9,8 @@ export const transition = async function (lucas, gover, subtitle, overline) {
     subtitle = document.querySelector(".subtitle");
   overline = document.querySelector(".overline");
 
-    gsap.set(lucas, {  opacity: 0, perspective: '15vw', transformStyle:"preserve-3d", force3D: true, });
-    gsap.set(gover, {  opacity: 0, perspective: '15vw', transformStyle:"preserve-3d" , force3D: true, });
+    gsap.set(lucas, {  opacity: 0, perspective: '15vw', transformStyle:"preserve-3d", force3D: true, rotationX: '90deg',translateY: "70",translateX: "-10"});
+    gsap.set(gover, {  opacity: 0, perspective: '15vw', transformStyle:"preserve-3d" , force3D: true, rotationX: '-90deg',translateY: "-70", translateX: "10"});
     gsap.set(overline, { perspective: 400, opacity: 0 });
 
     gsap.fromTo(overline, { opacity: 0 }, { opacity: 1, duration: 1.25 });
@@ -19,34 +19,29 @@ export const transition = async function (lucas, gover, subtitle, overline) {
 
     gsap.fromTo(
       overline,
-      { x: -20, opacity: 0 },
+      { x: -20},
       {
         x: 0,
-        opacity: 1,
         stagger: 0.02,
         duration: 0.35,
-        ease: "backwards",
-        clearProps: "opacity",
+        ease: "backwards"
       }
     );
-
     gsap.fromTo(
       lucas,
       {
         scale: 1,
-        translateY: "50%",
-        rotationX: '90deg',
-        opacity: 0,
       },
       {
+        delay: 0.3,
         scale: 1,
         translateY: "0",
-        rotationX: 0,
-        opacity: 1,
+        translateX: "0",
+        rotationX: "0deg",
         duration: 1,
         // stagger: 0.1,
         force3D: true,
-        ease: "power4",
+        ease: "ease",
         //clearProps: "opacity",
       }
     );
@@ -54,32 +49,19 @@ export const transition = async function (lucas, gover, subtitle, overline) {
    gsap.fromTo(
      gover,
      {
-       scale: 1,
-        translateY: "50%",
-        rotationX: '90deg',
-        opacity: 0,
+      scale: 1,
       },
      {
+        delay:0.3,
         scale: 1,
         translateY: "0",
+        translateX: "0",
         rotationX: 0,
-        opacity: 1,
         duration: 1.15,
-        delay: .25,
         // stagger: 0.05,
         force3D: true,
-        ease: "power4",
+        ease: "ease",
         //clearProps: "opacity",
       }
     );
-
-    gsap.to(".year", {
-      scrollTrigger: {
-        trigger: "#projects",
-        end: 200,
-        scrub: true,
-        once: false,
-      },
-      opacity: 0,
-    });
   };

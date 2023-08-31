@@ -1,7 +1,7 @@
 <script>
 	import Seo from '$lib/Seo.svelte';
 	import Header from '$lib/Sections/Header.svelte';
-    import About from '$lib/Sections/Header.svelte';
+    import About from '$lib/Sections/About.svelte';
 	//import Projects from "$lib/Sections/Projects.svelte";
 	//import Blog from "$lib/Sections/Blog.svelte";
 	//import Awards from "$lib/Sections/Awards.svelte";

@@ -41,7 +41,7 @@
   let transitioned = false;
 
   import { sleep } from "../../scripts/utils.js";
-  import { transition } from "../../scripts/transitions/rotate.js";
+  import { transition } from "../../scripts/transitions/intro.js";
 
   onMount(async () => {
     if ($prefersReducedMotion) return;
@@ -75,7 +75,6 @@
       </h1>
     </div>
   </div>
-  <h1 class="year">Portfolio 2023</h1>
 </section>
 
 <style>
@@ -89,19 +88,6 @@
     overflow: hidden;
     position: relative;
     transition: height 100ms ease; /* Height is initially 101vh UNTIL windowHeight is set */
-  }
-
-  .year {
-    position: absolute;
-    bottom: calc(20px + 1.5rem / 2);
-    left: 20px;
-    margin-left: 2rem;
-    color: rgba(var(--text-color-rgb), 0.35);
-    font-family: var(--font-sans);
-    font-weight: 300;
-    font-size: 1.5rem;
-    letter-spacing: -0.05rem;
-    user-select: none;
   }
 
   .header-container {
@@ -128,8 +114,14 @@
     font-weight: 600;
     letter-spacing: -0.05rem;
     text-transform: uppercase;
-    text-shadow: 1px 1px 2px var(--box-shadow-color);
     overflow: hidden;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .gover {
+      -webkit-text-stroke: 3px rgba(255,255,255,0.7);
+	    -webkit-text-fill-color: rgba(255,255,255,0.1);
+    }
   }
 
   :global(.lucas *) {
