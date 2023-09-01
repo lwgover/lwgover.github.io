@@ -2,7 +2,7 @@
 	import Seo from '$lib/Seo.svelte';
 	import Header from '$lib/Sections/Header.svelte';
     import About from '$lib/Sections/About.svelte';
-	//import Projects from "$lib/Sections/Projects.svelte";
+	import Writings from "$lib/Sections/Writings.svelte";
 	//import Blog from "$lib/Sections/Blog.svelte";
 	//import Awards from "$lib/Sections/Awards.svelte";
 
@@ -20,11 +20,12 @@
 	<hr/>
     <About/>
 	<hr/>
+	<Writings/>
 	<!--
     <Projects projects={data.projects} />
     <Awards awards={data.awards} {isMobile} />
     <Blog posts={data.posts} {isMobile} /> 
--->
+	-->
 </main>
 
 <style>
@@ -39,6 +40,7 @@
 		/* background-color: var(--primary-color); */
 		z-index: 100; /* This is over the nav */
 		position: relative;
+		background-image: url( '/images/backdrops/topography.svg' );
 	}
 
 	/* On desktop, do the cool sticky footer that reveals on scroll */

@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	import { gsap } from "gsap";
+	import { gsap } from 'gsap';
 	// @ts-ignore
 	// @ts-ignore
 	// @ts-ignore
@@ -17,8 +17,8 @@
 		"like these <span style='vertical-align: top; font-size: .8em;'>&darr;</span>"
 	];
 	// @ts-ignore
-// @ts-ignore
-		$: subtitleString = subtitleOptions[subtitleIndex];
+	// @ts-ignore
+	$: subtitleString = subtitleOptions[subtitleIndex];
 
 	let scrollToProjects = () => window.scrollTo(0, $windowHeight);
 	// @ts-ignore
@@ -50,7 +50,7 @@
 	/**
 	 * @type {any}
 	 */
-	 let headerObj;
+	let headerObj;
 	let transitioned = false;
 
 	import { sleep } from '../../scripts/utils.js';
@@ -67,7 +67,6 @@
 		await sleep(2000);
 		transitioned = true;
 	});
-
 </script>
 
 <section
@@ -128,11 +127,6 @@
 			-webkit-text-fill-color: rgba(255, 255, 255, 0.1);
 		}
 	}
-	@media screen and (max-width: 768px) (-webkit-min-device-pixel-ratio: 0) {
-		.gover {
-			-webkit-text-stroke: 1px rgba(255, 255, 255, 1);
-		}
-	}
 
 	:global(.lucas *) {
 		transform-origin: center bottom;
@@ -172,6 +166,15 @@
 
 		.overline {
 			font-size: 8vw;
+		}
+	}
+	@media screen and (max-width: 768px){
+		.gover {
+			-webkit-text-stroke: 1px rgba(255, 255, 255, 1);
+		}
+		.lucas,
+		.gover{
+			font-size: 20vw;
 		}
 	}
 </style>
