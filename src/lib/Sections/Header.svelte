@@ -1,184 +1,177 @@
 <script>
-  import { onMount } from "svelte";
-  // @ts-ignore
-  import { windowHeight, windowWidth } from "../../stores/global.js";
-  import { prefersReducedMotion } from "../../stores/motion.js";
-  import { fly } from "svelte/transition";
+	import { onMount } from 'svelte';
+	import { gsap } from "gsap";
+	// @ts-ignore
+	// @ts-ignore
+	// @ts-ignore
+	import { windowHeight, windowWidth } from '../../stores/global.js';
+	import { prefersReducedMotion } from '../../stores/motion.js';
+	// @ts-ignore
+	// @ts-ignore
+	import { fly } from 'svelte/transition';
 
-  let subtitleIndex = 0;
-  let subtitleOptions = [
-    "on the web.",
-    "with data.",
-    "like these <span style='vertical-align: top; font-size: .8em;'>&darr;</span>",
-  ];
-  $: subtitleString = subtitleOptions[subtitleIndex];
+	let subtitleIndex = 0;
+	let subtitleOptions = [
+		'on the web.',
+		'with data.',
+		"like these <span style='vertical-align: top; font-size: .8em;'>&darr;</span>"
+	];
+	// @ts-ignore
+// @ts-ignore
+		$: subtitleString = subtitleOptions[subtitleIndex];
 
-  let scrollToProjects = () => window.scrollTo(0, $windowHeight);
-  let unclicked = true;
-  const switchSub = () => {
-    unclicked = false;
-    subtitleIndex == subtitleOptions.length - 1
-      ? scrollToProjects()
-      : subtitleIndex++;
-  };
+	let scrollToProjects = () => window.scrollTo(0, $windowHeight);
+	// @ts-ignore
+	// @ts-ignore
+	let unclicked = true;
+	// @ts-ignore
+	// @ts-ignore
+	const switchSub = () => {
+		unclicked = false;
+		subtitleIndex == subtitleOptions.length - 1 ? scrollToProjects() : subtitleIndex++;
+	};
 
-  /**
+	/**
 	 * @type {any}
 	 */
-  let lucas;
-  /**
+	let lucas;
+	/**
 	 * @type {any}
 	 */
-  let gover
-  /**
+	let gover;
+	/**
 	 * @type {any}
 	 */
-  let subtitle
-  /**
+	let subtitle;
+	/**
 	 * @type {any}
 	 */
-  let overline;
-  let transitioned = false;
+	let overline;
+	/**
+	 * @type {any}
+	 */
+	 let headerObj;
+	let transitioned = false;
 
-  import { sleep } from "../../scripts/utils.js";
-  import { transition } from "../../scripts/transitions/intro.js";
+	import { sleep } from '../../scripts/utils.js';
+	import { transition } from '../../scripts/transitions/intro.js';
+	// @ts-ignore
+	import Window from '$lib/Window.svelte';
 
-  onMount(async () => {
-    if ($prefersReducedMotion) return;
+	onMount(async () => {
+		if ($prefersReducedMotion) return;
 
-    await sleep(250);
-    await transition(lucas, gover, subtitle, overline);
+		await sleep(250);
+		await transition(lucas, gover, subtitle, overline);
 
-    await sleep(2000);
-    transitioned = true;
-  });
+		await sleep(2000);
+		transitioned = true;
+	});
 
 </script>
 
 <section
-  id="header"
-  style="min-height: {$windowHeight
-    ? `${$windowHeight * 1.01}px`
-    : '101vh'}; perspective: 100vw;">
-  <div
-    class="header-container"
-  >
-    <h1 class="overline begin-invisible" class:transitioned>Hi, I'm</h1>
-    <div class="title">
-      <h1 class="lucas begin-invisible gradient-accented" class:transitioned>
-        lucas
-      </h1>
-      <h1
-        class="gover begin-invisible gradient-accented"
-        class:transitioned>
-        gover
-      </h1>
-    </div>
-  </div>
+	id="header"
+	style="min-height: {$windowHeight ? `${$windowHeight * 1.01}px` : '101vh'}; perspective: 100vw;"
+>
+	<div class="header-container">
+		<h1 class="overline begin-invisible" class:transitioned>Hi, I'm</h1>
+		<div class="title">
+			<h1 class="lucas begin-invisible gradient-accented" class:transitioned>lucas</h1>
+			<h1 class="gover begin-invisible gradient-accented" class:transitioned>gover</h1>
+		</div>
+	</div>
 </section>
 
 <style>
-  section {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* center */
-    place-items: center; /* center */
-    overflow: hidden;
-    position: relative;
-    transition: height 100ms ease; /* Height is initially 101vh UNTIL windowHeight is set */
-  }
+	section {
+		width: 100%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center; /* center */
+		place-items: center; /* center */
+		overflow: hidden;
+		position: relative;
+		transition: height 100ms ease; /* Height is initially 101vh UNTIL windowHeight is set */
+	}
+	.header-container {
+		line-height: 0.85;
+		user-select: none;
+	}
 
-  .header-container {
-    line-height: 0.85;
-    user-select: none;
-  }
+	.overline {
+		font-weight: 200;
+		text-align: left;
+		margin-bottom: 0.75rem;
+		font-style: italic;
+		font-size: 2.75rem;
+	}
 
-  .overline {
-    font-weight: 200;
-    text-align: left;
-    margin-bottom: 0.75rem;
-    font-style: italic;
-    font-size: 2.75rem;
-  }
+	.title {
+		margin-bottom: 1.5rem;
+		/* overflow: hidden; */
+	}
 
-  .title {
-    margin-bottom: 1.5rem;
-    /* overflow: hidden; */
-  }
+	.lucas,
+	.gover {
+		display: block;
+		font-weight: 600;
+		letter-spacing: -0.05rem;
+		text-transform: uppercase;
+		overflow: hidden;
+	}
 
-  .lucas,
-  .gover {
-    display: block;
-    font-weight: 600;
-    letter-spacing: -0.05rem;
-    text-transform: uppercase;
-    overflow: hidden;
-  }
+	@media screen and (-webkit-min-device-pixel-ratio: 0) {
+		.gover {
+			-webkit-text-stroke: 3px rgba(255, 255, 255, 0.7);
+			-webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+		}
+	}
+	@media screen and (max-width: 768px) (-webkit-min-device-pixel-ratio: 0) {
+		.gover {
+			-webkit-text-stroke: 1px rgba(255, 255, 255, 1);
+		}
+	}
 
-  @media screen and (-webkit-min-device-pixel-ratio:0) {
-    .gover {
-      -webkit-text-stroke: 3px rgba(255,255,255,0.7);
-	    -webkit-text-fill-color: rgba(255,255,255,0.1);
-    }
-  }
+	:global(.lucas *) {
+		transform-origin: center bottom;
+		/* transform-origin: center top; */
+		transform-style: preserve-3d;
+		transition: opacity 0s cubic-bezier(0.215, 0.61, 0.355, 1),
+			transform 0s cubic-bezier(0.215, 0.61, 0.355, 1);
+	}
 
-  :global(.lucas *) {
-    transform-origin: center bottom;
-    /* transform-origin: center top; */
-    transform-style: preserve-3d;
-    transition: opacity 0s cubic-bezier(0.215, 0.61, 0.355, 1),
-      transform 0s cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
+	:global(.gover *) {
+		transform-origin: center bottom;
+		/* transform-origin: center top; */
+		transform-style: preserve-3d;
+		transition: opacity 0s cubic-bezier(0.215, 0.61, 0.355, 1),
+			transform 0s cubic-bezier(0.215, 0.61, 0.355, 1);
+	}
 
-  :global(.gover *) {
-    transform-origin: center bottom;
-    /* transform-origin: center top; */
-    transform-style: preserve-3d;
-    transition: opacity 0s cubic-bezier(0.215, 0.61, 0.355, 1),
-      transform 0s cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
+	.lucas {
+		font-size: 15vw;
+	}
 
-  .lucas {
-    font-size: 15vw;
-  }
+	.gover {
+		font-size: 15vw;
+	}
 
-  .gover {
-    font-size: 15vw;
-  }
+	@media screen and (max-width: 768px) {
+		.overline {
+			font-size: 2rem;
+			margin-bottom: 0.75rem;
+		}
+	}
 
-  .switch {
-    cursor: pointer;
-    border-bottom: 1px solid rgba(var(--text-color-rgb), 0.2);
-    transition: border-bottom-color 200ms ease;
-    display: inline-block;
-    padding-bottom: 0.5rem;
-    font-style: italic;
-    font-weight: 200;
-  }
-  .switch:hover {
-    border-bottom-color: rgba(var(--accent-color-rgb), 0.6);
-  }
+	@media screen and (max-width: 768px) {
+		section {
+			place-items: center;
+		}
 
-  @media screen and (max-width: 768px) {
-    .overline {
-      font-size: 2rem;
-      margin-bottom: 0.75rem;
-    }
-
-    .year {
-      font-size: 1.5rem;
-    }
-  }
-
-  @media screen and (max-width: 468px) {
-    section {
-      place-items: center;
-    }
-
-    .overline {
-      font-size: 8vw;
-    }
-  }
+		.overline {
+			font-size: 8vw;
+		}
+	}
 </style>

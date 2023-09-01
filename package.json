@@ -33,6 +33,7 @@
 		"lodash": "^4.17.21",
 		"lodash.debounce": "^4.0.8",
 		"whatwg-url": "^13.0.0",
+		"window": "^4.2.7",
 		"xstate": "^4.38.2"
 	}
 }

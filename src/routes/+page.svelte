@@ -17,7 +17,9 @@
 <Seo />
 <main id="home">
 	<Header />
+	<hr/>
     <About/>
+	<hr/>
 	<!--
     <Projects projects={data.projects} />
     <Awards awards={data.awards} {isMobile} />
