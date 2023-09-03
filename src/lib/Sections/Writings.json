@@ -3,7 +3,7 @@
         {
             "title": "Birdsong Deepfakes: Using Transformer-GANs to Generate Artificial Birdsong",
             "purpose": "Undergraduate Research with Prof. Adam Smith",
-            "authors": "A. A. Smith, B. Beynham, L. Gover,  J. Ruder. 2023.",
+            "authors": "A. A. Smith, B. Beynham, L. Gover,  J. Ruder. 2023",
             "link": "./pdfs/Birds.pdf",
             "photo": "./images/Writings/birds.png",
             "abstract": "This paper explores the use of generative-adversarial neural networks (GANs) to generate artificial birdsong. We analyze two types of GAN architecture, recurrent neural networks (RNNs) and transformers, for their ability to model sequential data in order to generate convincing bird vocalizations. Our GAN model is trained on birdsong scalagrams which leverage the Continuous Wavelet Transform for more precise time and frequency measures. Through experiments, we evaluate the efficacy of both architectures and investigate how GANs can help create realistic birdsong that captures many of the features of real birdsong."
@@ -11,7 +11,7 @@
         {
             "title": "From Platform to Paranoia: How the lunatic fringe took over the GOP",
             "purpose": "Final Paper for Parties, Elections, and Campaigns",
-            "authors": "Gover, Lucas. 2023.",
+            "authors": "Gover, Lucas. 2023",
             "link": "./pdfs/TheRight.pdf",
             "photo": "./images/Writings/TheRight.png",
             "abstract": "For decades, conservative elites were able to keep the authoritarian populists outside of the political mainstream. When this element began to creep into electoral success, Republican party elites could usually battle it back. Yet slowly, the elites have lost their power. Republican elites have sought to contain their party’s extreme tendencies by adopting a “plutocratic populism” agenda, combining the economic interests of the moneyed elite with cultural backlash. However, this alliance has been overwhelmed by a shift that is increasingly driven by polarization and revanchism. As parties have weakened, more extreme candidates have gained more control, and social media has only added fuel to the fire. The result is an apparent end to party control by responsible elites and a transformation of the GOP into a violent, conspiratorial, and anti-democratic force."
@@ -19,7 +19,7 @@
         {
             "title": "Political Bias in Large Language Models",
             "purpose": "The Commons Journal of Politics",
-            "authors": "Gover, Lucas. 2023.",
+            "authors": "Gover, Lucas. 2023",
             "link": "https://soundideas.pugetsound.edu/thecommons/vol4/iss1/2",
             "photo": "./images/Writings/PoliticalBias.png",
             "abstract": "Recent research has found that large language models consistently capture and replicate undesirable societal biases relating to race, religion, and gender. However, political bias is not well explored. This study investigates the political bias present in the state-of-the-art large language model GPT-3. To investigate political bias, I apply Natural Language Processing techniques to develop a political sentiment analysis model. Using this model, I analyze the ideological bias present in political essays written by GPT-3, finding that GPT-3 has a moderate left-leaning bias and tends to replicate the ideological bias of prompt text."

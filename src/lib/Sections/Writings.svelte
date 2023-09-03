@@ -1,15 +1,17 @@
 <script>
-	import { fade, scale } from "svelte/transition"
+	import { fade, slide} from 'svelte/transition';
 	/**
 	 * @type {{ items: any; }}
 	 */
 	export let data;
+	let curr_datum = data.items[data.items.length - 1];
 
 	function next() {
 		var last = data.items.pop();
 		data.items.unshift(last);
 		console.log(last);
 		data = data;
+		curr_datum = data.items[data.items.length - 1];
 		return null;
 	}
 </script>
@@ -20,7 +22,8 @@
 		<div class="col col-left">
 			<div class="image-container">
 				{#each data.items as datum, i}
-					<a href={datum.link} target="_blank" rel="noopener noreferrer">
+					{#key datum}
+					<a href={datum.link} target="_blank" rel="noopener noreferrer" out:fade in:fade>
 						<img
 							src={`${datum.photo}`}
 							alt="birds paper"
@@ -28,23 +31,26 @@
 							class="image center"
 						/>
 					</a>
+					{/key}
 				{/each}
 			</div>
 		</div>
 
 		<div class="col col-right">
-			<div class="writing-desc-header">
-				<h2 class="writing-title">
-					<a target="_blank" rel="noopener noreferrer" href={data.items[data.items.length - 1].link}
-						>{data.items[data.items.length - 1].title}</a
-					>
-				</h2>
-				<h3 class="writing-desc">{data.items[data.items.length - 1].authors}</h3>
-				<h3 class="writing-desc">{data.items[data.items.length - 1].purpose}</h3>
-			</div>
-			<p class="writing-abstract" style="text-align:left" in:fade={{ delay: 500 }} out:fade>
-				{data.items[data.items.length - 1].abstract}
-			</p>
+			{#key curr_datum}
+				<div class="writing-desc-header" in:fade={{duration: 1000, delay: 500 }} out:slide={{duration: 800}}>
+					<h2 class="writing-title">
+						<a target="_blank" rel="noopener noreferrer" href={curr_datum.link}
+							>{curr_datum.title}</a
+						>
+					</h2>
+					<h3 class="writing-desc">{curr_datum.authors}</h3>
+					<h3 class="writing-desc">{curr_datum.purpose}</h3>
+				</div>
+				<p class="writing-abstract" style="text-align:left" in:fade={{duration: 1000,delay: 700 }} out:slide={{duration: 800}}>
+					{curr_datum.abstract}
+				</p>
+			{/key}
 			<button class="next-button" on:click={next}>Next</button>
 		</div>
 	</div>
