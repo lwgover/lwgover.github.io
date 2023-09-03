@@ -38,7 +38,7 @@
 
 		<div class="col col-right">
 			{#key curr_datum}
-				<div class="writing-desc-header" in:fade={{duration: 1000, delay: 800 }} out:slide={{duration: 600}}>
+				<div class="writing-desc-header" in:fly={{duration: 1000, delay: 600 }} out:fly={{duration: 600}}>
 					<h2 class="writing-title">
 						<a target="_blank" rel="noopener noreferrer" href={curr_datum.link}
 							>{curr_datum.title}</a
@@ -47,11 +47,11 @@
 					<h3 class="writing-desc">{curr_datum.authors}</h3>
 					<h3 class="writing-desc">{curr_datum.purpose}</h3>
 				</div>
-				<p class="writing-abstract" style="text-align:left" in:fade={{duration: 1000,delay: 1000 }} out:slide={{duration: 600}}>
+				<p class="writing-abstract" style="text-align:left" in:slide={{duration: 1000,delay: 1000 }} out:slide={{duration: 600}}>
 					{curr_datum.abstract}
 				</p>
+				<button class="next-button" on:click={next} in:slide={{duration: 1000,delay: 1000 }} out:slide={{duration: 600}}>Next</button>
 			{/key}
-			<button class="next-button" on:click={next}>Next</button>
 		</div>
 	</div>
 </section>

@@ -18,7 +18,7 @@
 	let pageHeight;
 	$: isMobile = pageWidth < 768;
 	let scroll = 0;
-	let parallax_rate = -1.005;
+	let parallax_rate = -1.001;
 </script>
 
 <svelte:window bind:innerWidth={pageWidth} bind:innerHeight={pageHeight} bind:scrollY={scroll}/>

@@ -1,0 +1,40 @@
+{
+    "items":[
+        {
+            "title":"American Values Regression Tree",
+            "tools":["D3.JS", "REACT.JS", "PANDAS", "FLASK"],
+            "description":"Website which visualizes how personal identities can shape political values. Users have the option to select which values and identities they are interested in. These selections are sent to a predictive model to better understand the relationships between them. The website renders this complex data in an easily understandable way, developing an intuitive yet detailed platform that can be used by both laymen and seasoned political scientists.",
+            "link":"https://www.lucasgover.com/political-identity-decision-tree/"
+        },
+        {
+            "title":"Movie Recommender",
+            "tools":["D3.JS","Graph Algorithms","HTML5"],
+            "description":"This project was designed to generate a graph of movies from a movie review database using Graph Analysis Algorithms to find relationships between movies. I implemented Dijkstra's algorithm and the Floyd-Warshall algorithm to generate movie recommendations based on similarity scores. I created an efficient interface that allowed users to gain insights into the graph, navigating the similarities between movies. As part of this project, I wrote a visual representation of the graph with D3.js, which was designed to give users a visual understanding of the movie relationships.",
+            "link":"https://www.lucasgover.com/MovieRecommender"
+        },
+        {
+            "title":"Birdsong Deepfakes",
+            "tools":["TENSORFLOW", "PYTORCH", "PYTHON", "SIGNAL ANALYSIS"],
+            "description":"I recently completed my capstone research project creating generative-adversarial neural networks to generate artificial birdsong. To evaluate the efficacy of this method, my teammates and I explored recurrent neural network and transformer GAN Architectures trained on birdsong scalagrams.",
+            "link":"./pdfs/Birds.pdf"
+        },
+        {
+            "title":"Political Sentiment Analysis Research",
+            "tools":["TENSORFLOW", "PYTHON", "PANDAS", "SPSS", "SKLEARN"],
+            "description":"My senior politics thesis research on political bias in Large Language Models. I built and implemented a sentiment analysis model to analyze the political bias of the state-of-the-art large language model GPT-3. My research furthers understanding of the potential societal biases represented in large language models and provides a means of measuring and understanding of these biases.",
+            "link":"./pdfs/PoliticalBias.pdf"
+        },
+        {
+            "title":"Quiz Website",
+            "tools":["REACT.JS", "NODE.JS","EXPRESS.JS", "mySQL"],
+            "description":"Created a web application for creating and taking quizzes for my Database Management class final project. Designed and optimized front-end that enables users to find and take quizzes. Implemented an efficient back-end to store user-created data and facilitate user queries.",
+            "link":"https://github.com/lwgover/databases_final_project"
+        },
+        {
+            "title":"Solar System Lighting Simulation",
+            "tools":["OpenGL","GLSL","JOGL","JAVA"],
+            "description":"Open-GL solar system model, that takes a solar system description from the SolarSystem.sol file.",
+            "link":"https://github.com/lwgover/SolarSystem"
+        }
+    ]
+}
