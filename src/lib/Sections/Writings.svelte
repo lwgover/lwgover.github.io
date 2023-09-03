@@ -1,4 +1,5 @@
 <script>
+	import { fade, scale } from "svelte/transition"
 	/**
 	 * @type {{ items: any; }}
 	 */
@@ -14,17 +15,17 @@
 </script>
 
 <section class="writings">
-	<h2 class="section-title">Thing I've Written</h2>
+	<h2 class="section-title">Things I've Written</h2>
 	<div class="row">
 		<div class="col col-left">
 			<div class="image-container">
 				{#each data.items as datum, i}
 					<a href={datum.link} target="_blank" rel="noopener noreferrer">
-                    <img
+						<img
 							src={`${datum.photo}`}
 							alt="birds paper"
 							style={`transform: rotate(${(i - 1) * 7}deg);`}
-							class="image"
+							class="image center"
 						/>
 					</a>
 				{/each}
@@ -32,22 +33,83 @@
 		</div>
 
 		<div class="col col-right">
-			<h2>{data.items[data.items.length - 1].title}</h2>
-			<h3>{data.items[data.items.length - 1].authors}</h3>
-			<h3>{data.items[data.items.length - 1].purpose}</h3>
-			<p style="text-align:left">{data.items[data.items.length - 1].abstract}</p>
-			<button on:click={next}>Next</button>
+			<div class="writing-desc-header">
+				<h2 class="writing-title">
+					<a target="_blank" rel="noopener noreferrer" href={data.items[data.items.length - 1].link}
+						>{data.items[data.items.length - 1].title}</a
+					>
+				</h2>
+				<h3 class="writing-desc">{data.items[data.items.length - 1].authors}</h3>
+				<h3 class="writing-desc">{data.items[data.items.length - 1].purpose}</h3>
+			</div>
+			<p class="writing-abstract" style="text-align:left" in:fade={{ delay: 500 }} out:fade>
+				{data.items[data.items.length - 1].abstract}
+			</p>
+			<button class="next-button" on:click={next}>Next</button>
 		</div>
 	</div>
 </section>
 
 <style>
+	.writing-title a {
+		color: white;
+	}
+	.writing-title a:hover {
+		color: var(--accent-color);
+	}
+	.writing-desc-header {
+		background-color: rgba(255, 255, 255, 0.2);
+		padding: 10px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+	.writing-desc {
+		color: white;
+		font-size: 20px;
+		padding-left: 20px;
+	}
+	.writing-title {
+		text-align: left;
+		font-size: 40px;
+		font-family: var(--font-serif);
+		font-weight: 200;
+		padding: 10px;
+	}
+	.next-button {
+		background-color: rgba(255, 255, 255, 0.2);
+		margin: 10px;
+		color: white;
+		padding: 5px;
+		outline: none;
+		border-radius: 3px;
+		padding-left: 20px;
+		padding-right: 20px;
+		border: 2px solid white;
+		font-family: var(--font-serif);
+		font-weight: 400;
+		font-size: 30px;
+		font-style: italic;
+	}
+	.next-button:hover {
+		background-color: rgba(255, 255, 255, 0.4);
+	}
+	.writing-abstract {
+		font-size: 18px;
+		padding-left: 30px;
+		padding: 20px;
+	}
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
 	.image-container {
 		position: relative;
-		width: 50%;
 		height: 350px;
-		margin: auto;
+		margin: 0;
 		text-align: center;
+		top: 6.25%;
 	}
 
 	.image {
@@ -56,6 +118,14 @@
 		width: auto;
 		box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
 		margin: auto;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		top: 0;
+		bottom: 0;
+		margin-top: auto;
+		margin-bottom: auto;
 	}
 	img {
 		position: absolute;
@@ -72,29 +142,48 @@
 	img:last-child {
 		opacity: 1;
 	}
-	.section-title {
-		font-weight: 10px;
-		padding: 20px;
-		text-align: left;
+	u {
+		text-decoration-thickness: 0.05em;
+		text-underline-offset: 7px;
 	}
-	.writings {
-		text-align: center;
-	}
-	.row {
-		display: flex;
-	}
-	.col-left {
-		width: 33%;
-	}
-	.col-right {
-		width: 66%;
-	}
-	@media screen and (-webkit-min-device-pixel-ratio: 0) {
-		.section-title {
-			-webkit-text-stroke: 2px rgba(255, 255, 255, 0.8);
-			-webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+	@media screen and (min-width: 1001px) {
+		.writings .row {
+			display: flex;
+			margin-right: 0px;
+		}
+		.writings .col-left {
+			width: 33%;
+		}
+		.writings .col-right {
+			width: 67%;
+		}
+		.next-button {
+			float: right;
+			margin-right: 50px;
 		}
 	}
-	@media screen and (max-width: 1001px) {
+	@media screen and (max-width: 1000px) {
+		.row {
+			display: relative;
+		}
+		.writings .col-left {
+			width: 100%;
+		}
+		.writings .col-right {
+			width: 100%;
+		}
+		.next-button {
+			margin: 0 auto;
+			display: block;
+		}
+		.writing-desc-header {
+			margin: 20px;
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+		.writing-abstract {
+			padding: 40px;
+			padding-top: 10px;
+		}
 	}
 </style>

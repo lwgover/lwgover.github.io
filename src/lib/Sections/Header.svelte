@@ -1,36 +1,8 @@
 <script>
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
-	// @ts-ignore
-	// @ts-ignore
-	// @ts-ignore
 	import { windowHeight, windowWidth } from '../../stores/global.js';
 	import { prefersReducedMotion } from '../../stores/motion.js';
-	// @ts-ignore
-	// @ts-ignore
-	import { fly } from 'svelte/transition';
-
-	let subtitleIndex = 0;
-	let subtitleOptions = [
-		'on the web.',
-		'with data.',
-		"like these <span style='vertical-align: top; font-size: .8em;'>&darr;</span>"
-	];
-	// @ts-ignore
-	// @ts-ignore
-	$: subtitleString = subtitleOptions[subtitleIndex];
-
-	let scrollToProjects = () => window.scrollTo(0, $windowHeight);
-	// @ts-ignore
-	// @ts-ignore
-	let unclicked = true;
-	// @ts-ignore
-	// @ts-ignore
-	const switchSub = () => {
-		unclicked = false;
-		subtitleIndex == subtitleOptions.length - 1 ? scrollToProjects() : subtitleIndex++;
-	};
-
 	/**
 	 * @type {any}
 	 */

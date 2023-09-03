@@ -17,7 +17,7 @@
 	let pageHeight;
 	$: isMobile = pageWidth < 768;
 	let scroll = 0;
-	let parallax_rate = -1.01;
+	let parallax_rate = -1.005;
 </script>
 
 <svelte:window bind:innerWidth={pageWidth} bind:innerHeight={pageHeight} bind:scrollY={scroll}/>
@@ -25,10 +25,11 @@
 <main id="home">
 	<div class="parallax" style:transform={`translate3d(0, ${scroll * parallax_rate}px,0)`}>
 	<Header />
-	</div>
+</div>
 	<About />
 	<hr />
 	<Writings data={writings_data} />
+	<hr/>
 	<!--
     <Projects projects={data.projects} />
     <Awards awards={data.awards} {isMobile} />
