@@ -3,7 +3,14 @@
 	 * @type {{ items: any; }}
 	 */
 	export let data;
-	console.log(data);
+
+	function next() {
+		var last = data.items.pop();
+		data.items.unshift(last);
+		console.log(last);
+		data = data;
+		return null;
+	}
 </script>
 
 <section class="writings">
@@ -12,12 +19,14 @@
 		<div class="col col-left">
 			<div class="image-container">
 				{#each data.items as datum, i}
-					<img
-						src={`${datum.photo}`}
-						alt="birds paper"
-						style={`transform: rotate(${(i - 1) * 7}deg);`}
-						class="image"
-					/>
+					<a href={datum.link} target="_blank" rel="noopener noreferrer">
+                    <img
+							src={`${datum.photo}`}
+							alt="birds paper"
+							style={`transform: rotate(${(i - 1) * 7}deg);`}
+							class="image"
+						/>
+					</a>
 				{/each}
 			</div>
 		</div>
@@ -27,6 +36,7 @@
 			<h3>{data.items[data.items.length - 1].authors}</h3>
 			<h3>{data.items[data.items.length - 1].purpose}</h3>
 			<p style="text-align:left">{data.items[data.items.length - 1].abstract}</p>
+			<button on:click={next}>Next</button>
 		</div>
 	</div>
 </section>
