@@ -102,7 +102,6 @@
 		}
 		.img-wrapper img {
 			border-radius: 50%;
-			box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.2);
 		}
 	}
   @media screen and (min-width: 1001px) {

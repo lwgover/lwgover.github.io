@@ -1,8 +1,9 @@
 <script>
 	import Seo from '$lib/Seo.svelte';
 	import Header from '$lib/Sections/Header.svelte';
-    import About from '$lib/Sections/About.svelte';
-	import Writings from "$lib/Sections/Writings.svelte";
+	import About from '$lib/Sections/About.svelte';
+	import Writings from '$lib/Sections/Writings.svelte';
+	import writings_data from '$lib/Sections/Writings.json';
 	//import Blog from "$lib/Sections/Blog.svelte";
 	//import Awards from "$lib/Sections/Awards.svelte";
 
@@ -10,17 +11,24 @@
 	 * @type {number}
 	 */
 	let pageWidth;
+	/**
+	 * @type {number}
+	 */
+	let pageHeight;
 	$: isMobile = pageWidth < 768;
+	let scroll = 0;
+	let parallax_rate = -1.01;
 </script>
 
-<svelte:window bind:innerWidth={pageWidth} />
+<svelte:window bind:innerWidth={pageWidth} bind:innerHeight={pageHeight} bind:scrollY={scroll}/>
 <Seo />
 <main id="home">
+	<div class="parallax" style:transform={`translate3d(0, ${scroll * parallax_rate}px,0)`}>
 	<Header />
-	<hr/>
-    <About/>
-	<hr/>
-	<Writings/>
+	</div>
+	<About />
+	<hr />
+	<Writings data={writings_data} />
 	<!--
     <Projects projects={data.projects} />
     <Awards awards={data.awards} {isMobile} />
@@ -40,7 +48,7 @@
 		/* background-color: var(--primary-color); */
 		z-index: 100; /* This is over the nav */
 		position: relative;
-		background-image: url( '/images/backdrops/topography.svg' );
+		background-image: url('/images/backdrops/topography.svg');
 	}
 
 	/* On desktop, do the cool sticky footer that reveals on scroll */
