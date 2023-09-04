@@ -20,28 +20,53 @@
 			</div>
 			<div class="row">
 				<div class="col col-left">
-                    <div class="tools-header">Tools Used</div>
+					<div class="tools-header">Tools Used</div>
 					{#each datum.tools as tool}
 						<div class="project-tool">{tool}</div>
 					{/each}
 				</div>
 				<div class="col col-right project-description-container">
 					<p class="project-description">{datum.description}</p>
-					<a href={datum.link}>
-						<button class='check-it-out-button'>Check it out ⇛</button>
+					<a target="_blank" rel="noopener noreferrer"href={datum.link}>
+						<button class="check-it-out-button">Check it out ⇛</button>
 					</a>
 				</div>
 			</div>
+			{#if 'image' in datum}
+				<div
+					class="full-image"
+					style={`background-image: linear-gradient(to top, rgba(40,40,40,0.3), rgba(255,255,255,0.1)), url(${datum.image});`}
+				/>
+			{/if}
 			<div class="project-spacing" />
 		{/each}
 	</div>
 </section>
 
 <style>
-    .check-it-out-button {
-        background-color: var(--primary-color);
+	.full-image {
+		position: relative;
+        background-size: 100%;
+		height:300px;
+		transform: scale(1.25);
+		z-index: 1;
+		margin-top: 40px;
+        border-color: white;
+        border-top-width: 2px;
+        display: block;
+	}
+	.full-image::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+	.check-it-out-button {
+		background-color: var(--primary-color);
 		margin: 10px;
-        margin-left: 0px;
+		margin-left: 0px;
 		color: white;
 		padding: 10px;
 		outline: none;
@@ -50,28 +75,34 @@
 		font-family: var(--font-mono);
 		font-weight: 400;
 		font-size: 20px;
-        margin-top: 30px;
+		margin-top: 30px;
+		z-index: 10;
+        margin-bottom:30px;
+	}
+    .check-it-out-button:hover {
+        background-color: rgb(33, 113, 131);
     }
-    .project-tool {
-        margin:5px;
-        text-align: center;
-        color:white;
-        background-color: #d81159;
-        font-weight: 800;
-        padding:5px;
-        width: fit-content;
-        float:right;
-        border-radius: 1px;
-    }
-    .tools-header {
-        margin:10px;
-        text-transform: uppercase;
-        font-weight: 300;
-        font-size: 20px;
-        color: #aaa;
-        width: fit-content;
-        float:right
-    }
+	.project-tool {
+		margin: 5px;
+		text-align: center;
+		color: white;
+		background-color: #d81159;
+		font-weight: 800;
+		padding: 5px;
+		width: fit-content;
+		float: right;
+		border-radius: 1px;
+	}
+	.tools-header {
+		margin: 10px;
+		text-transform: uppercase;
+		font-weight: 300;
+		font-size: 20px;
+		color: #aaa;
+		width: fit-content;
+		float: right;
+        width:100%; 
+	}
 	.projects .section-title {
 		color: #333;
 	}
@@ -100,7 +131,7 @@
 		color: #101010;
 	}
 	.project-spacing {
-		padding: 20px;
+		padding: 30px;
 	}
 	.projects-container {
 		width: 80%;
@@ -112,20 +143,23 @@
 	}
 	.projects .col-left {
 		width: 20%;
-        font-family: var(--font-sans);
-        float:right;
-        text-align: right;
-        margin-right: 10px;
+		font-family: var(--font-sans);
+		float: right;
+		text-align: right;
+		margin-right: 10px;
 	}
 	.projects .col-right {
 		width: 80%;
 	}
-    @media screen and (max-width: 1000px) {
-        .projects-container {
-		width: 100%;
+	@media screen and (max-width: 1000px) {
+		.projects-container {
+			width: 97%;
+		}
+		.projects .col-right {
+			width: 95%;
+		}
+        .full-image {
+            height:150px;
         }
-        .projects .col-right {
-		width: 95%;
 	}
-    }
 </style>
