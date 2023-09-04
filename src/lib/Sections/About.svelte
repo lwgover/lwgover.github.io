@@ -103,6 +103,9 @@
 		.img-wrapper img {
 			border-radius: 50%;
 		}
+		#about-text {
+			font-size: 1rem;
+		}
 	}
   @media screen and (min-width: 1001px) {
 		.row {

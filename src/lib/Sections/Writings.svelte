@@ -116,6 +116,7 @@
 		margin: 0;
 		text-align: center;
 		top: 6.25%;
+		margin-bottom:80px;
 	}
 
 	.image {
@@ -142,7 +143,7 @@
 	}
 
 	img:nth-child(2) {
-		opacity: 0.9;
+		opacity: 0.5;
 	}
 
 	img:last-child {
