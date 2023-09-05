@@ -36,7 +36,7 @@
         },
         {
             "title":"Political Sentiment Analysis Research",
-            "tools":["TENSORFLOW", "PYTHON", "PANDAS", "SPSS", "SKLEARN"],
+            "tools":["NLP","TENSORFLOW", "PYTHON", "PANDAS", "SPSS", "SKLEARN"],
             "description":"My senior politics thesis research on political bias in Large Language Models. I built and implemented a sentiment analysis model to analyze the political bias of the state-of-the-art large language model GPT-3. My research furthers understanding of the potential societal biases represented in large language models and provides a means of measuring and understanding of these biases.",
             "link":"./pdfs/PoliticalBias.pdf"
         }

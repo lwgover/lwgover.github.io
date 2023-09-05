@@ -1,0 +1,316 @@
+{
+    "items": [
+        {
+            "title": "Currently Reading",
+            "description": "I have the bad habit of reading too many things at once. Here's what I'm currently reading",
+            "books": [
+                {
+                    "title": "The Myth of Sisyphus by Albert Camus"
+                },
+                {
+                    "title": "Big Data and Social Science by Ian Foster, Rayid Ghani, Ron S. Jarmin, Frauke Kreuter, and Julia Lane"
+                },
+                {
+                    "title": "Mobility by Lydia Kiesling"
+                },
+                {
+                    "title": "The Politics Presidents Make by Stephen Skowronek"
+                },
+                {
+                    "title": "The Age of Surveilance Capitalism by Soshana Zuboff"
+                },
+                {
+                    "title": "Justice by Means of Democracy"
+                }
+            ]
+        },
+        {
+            "title": "2023",
+            "description": "",
+            "books": [
+                {
+                    "title": "The Traitor Prince by C. J. Redwine"
+                },
+                {
+                    "title": "Conversations on Writing by Ursula K. Le Guin"
+                },
+                {
+                    "title": "True and Only Heaven by Christopher Lasch"
+                },
+                {
+                    "title": "End of History and the Last Man by Francis Fukuyama"
+                },
+                {
+                    "title": "Doors of Eden by Adrian Tchaikovsky"
+                },
+                {
+                    "title": "Democracy matters by Cornell West"
+                },
+                {
+                    "title": "The Realigners by Timothy Shenk"
+                },
+                {
+                    "title": "The Bitter End by Chris Tausanovitch, John M. Sides, and Lynn Vavreck"
+                },
+                {
+                    "title": "Children of Memory by Adrian Tchaikovsky"
+                },
+                {
+                    "title": "The Shock Doctrine by Naomi Klein"
+                },
+                {
+                    "title": "The Metaphysical Club by Louis Menand"
+                },
+                {
+                    "title": "The Lathe of Heaven by Ursula K. Le Guin"
+                },
+                {
+                    "title": "The Cage of Souls by Adrian Tchaikovsky"
+                },
+                {
+                    "title": "Babel by R. F. Kuang"
+                },
+                {
+                    "title": "Slouching Towards Utopia by J. Bradford DeLong"
+                },
+                {
+                    "title": "Normal People by Sally Rooney"
+                },
+                {
+                    "title": "Confessions of a Conservative by Garry Wills"
+                },
+                {
+                    "title": "The Coddling of the American Mind by Greg Lukianoff and Jonathan Haidt"
+                },
+                {
+                    "title": "There is Nothing For You Here by Fiona Hill"
+                },
+                {
+                    "title": "Building a Second Brain by Tiago Forte"
+                },
+                {
+                    "title": "Interactive Data Visualization for the Web by Scott Murphy"
+                },
+                {
+                    "title": "God Human Animal Machine by Meghan O'Gieblyn"
+                },
+                {
+                    "title": "Identity: the Demand for Dignity and the Politics of Resentment by Francis Fukuyama"
+                },
+                {
+                    "title": "City of Last Chances by Adrian Tchaikovsky"
+                },
+                {
+                    "title": "Man's Search for Meaning by Victor Frankel"
+                },
+                {
+                    "title": "Psychoanalysis: the Impossible Profession by Janet Malcolm"
+                },
+                {
+                    "title": "The Price of Peace: Money, Democracy, and the Life of John Maynard Keynes"
+                }
+            ]
+        },
+        {
+            "title": "2022",
+            "description": "",
+            "books": [
+                {
+                    "title": "Children of ruin by Adrian Tchaikovsky"
+                },
+                {
+                    "title": "Atomic Habits by James Clear"
+                },
+                {
+                    "title": "A Little Life Hanya Yanagihara"
+                },
+                {
+                    "title": "Banality of Evil by Hannah Arendt"
+                },
+                {
+                    "title": "I, Robot by Isaac Asimov"
+                },
+                {
+                    "title": "The left hand of Darkness by Ursula K. Le Guin"
+                },
+                {
+                    "title": "The Extended Mind by Annie Murphy Paul"
+                },
+                {
+                    "title": "Stolen Focus by Johann Hari"
+                },
+                {
+                    "title": "Why we're polarized by Ezra Klein"
+                },
+                {
+                    "title": "Gallant by V. E. Schuab"
+                },
+                {
+                    "title": "Amusing Ourselves to Death by Neil Postman"
+                },
+                {
+                    "title": "Brave New World Aldous Huxley "
+                },
+                {
+                    "title": "The Anthropocene Reviewed by John Green"
+                },
+                {
+                    "title": "Shards of Earth by Adrian Tchaikovsky"
+                },
+                {
+                    "title": "A Wizard of Earth Sea by Ursula K. Le Guin"
+                },
+                {
+                    "title": "Weapons of Math Destruction Cathy O'Neil"
+                },
+                {
+                    "title": "Lost connections by Johann Hari"
+                },
+                {
+                    "title": "Automation and the Future of Work by Aaron Benanav"
+                },
+                {
+                    "title": "The Tombs of Atuan by Ursula K. Le Guin"
+                },
+                {
+                    "title": "Eyes of the Void by Adrian Tchaikovsky"
+                },
+                {
+                    "title": "The Furthest Shore by Ursula K. Le Guin"
+                },
+                {
+                    "title": "The Shallows by Nicholas Carr"
+                },
+                {
+                    "title": "Bewilderment by Richard Powers"
+                },
+                {
+                    "title": "The Golem and the Jinni by Helene Wecker"
+                },
+                {
+                    "title": "Twilight of Democracy by Anne Applebaum"
+                },
+                {
+                    "title": "The Hidden Palace by Helene Wecker"
+                },
+                {
+                    "title": "The Right: the 100-year war for American Conservatism by Mathew Contenetti"
+                },
+                {
+                    "title": "A Darker Shade of Magic by V. E. Schuab"
+                },
+                {
+                    "title": "A Gathering of Shadows by V. E. Schuab"
+                },
+                {
+                    "title": "Liberalism and its discontents by Francis Fukuyama"
+                },
+                {
+                    "title": "Politics is for power by Eitan Hirsh"
+                },
+                {
+                    "title": "A Conjuring of Light by V. E. Schuab"
+                },
+                {
+                    "title": "Sea of Tranquility by Emily St. John Mandel "
+                },
+                {
+                    "title": "First, You Write a Sentence"
+                },
+                {
+                    "title": "The Righteous Mind by Jonathan Haidt"
+                },
+                {
+                    "title": "Elite Capture by Olúfẹ́mi O. Táíwò"
+                },
+                {
+                    "title": "Talking to Strangers by Malcolm Gladwell"
+                },
+                {
+                    "title": "Station Eleven by Emily St. John Mandel "
+                },
+                {
+                    "title": "The Night Circus by Erin Morgenstern "
+                },
+                {
+                    "title": "The Soul of an Octopus by Sy Montgomery"
+                },
+                {
+                    "title": "The Elder Race by Adrian Tchaikovsky"
+                },
+                {
+                    "title": "The Midnight Library by Matt Haig"
+                },
+                {
+                    "title": "The Book of Form and Emptiness by Ruth Ozeki"
+                },
+                {
+                    "title": "How to write a Lot by Paul J. Silvia "
+                },
+                {
+                    "title": "The Book of Night by Holly Black"
+                },
+                {
+                    "title": "The Ministry for the Future by Kim Stanley Robinson"
+                },
+                {
+                    "title": "Deep work by Cal Newport "
+                },
+                {
+                    "title": "Axiom's end by Lindsay Ellis"
+                },
+                {
+                    "title": "The Truth of the Divine by Lindsay Ellis"
+                },
+                {
+                    "title": "The Rise and Fall of the Neoliberal Order Gary Gerstle"
+                },
+                {
+                    "title": "Why liberalism Failed by Patrick Deneen"
+                },
+                {
+                    "title": "Liberalism and it's discontents by Francis Fukuyama (again)"
+                },
+                {
+                    "title": "The Dawn of Everything by David Graeber and David Wengrow"
+                },
+                {
+                    "title": "Plain Style by Christopher Lasch"
+                },
+                {
+                    "title": "Looking for Alaska by John Green"
+                },
+                {
+                    "title": "Dune Messiah by Frank Herbert"
+                },
+                {
+                    "title": "Children of Dune by Frank Herbert"
+                },
+                {
+                    "title": "The Common Good by Robert Reich"
+                },
+                {
+                    "title": "Tomorrow and Tomorrow and Tomorrow by Gabrielle Zevin"
+                },
+                {
+                    "title": "Lincoln in the Bardo by George Saunders"
+                },
+                {
+                    "title": "The City We Became by N. K. Jemisin"
+                },
+                {
+                    "title": "Ordinary Monsters by J. M. Miro"
+                },
+                {
+                    "title": "The Journalist and the Murderer by Janet Malcolm"
+                },
+                {
+                    "title": "On Tyranny by Timothy Snyder"
+                },
+                {
+                    "title": "Exhalation by Ted Chiang"
+                }
+            ]
+        }
+    ]
+}

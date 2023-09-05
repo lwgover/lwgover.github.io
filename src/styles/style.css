@@ -67,7 +67,7 @@ html::-webkit-scrollbar {
     background: linear-gradient(
 			to bottom,
 			rgba(var(--primary-color-rgb), 1) -25%,
-			rgba(var(--pure-background-color-rgb), 1) 75%
+			rgba(var(--pure-background-color-rgb), 1) 50%
 		);
     /**
     //for noise

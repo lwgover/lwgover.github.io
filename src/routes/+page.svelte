@@ -6,6 +6,9 @@
 	import writings_data from '$lib/Sections/Writings.json';
 	import Projects from '$lib/Sections/Projects.svelte'
 	import projects_data from '$lib/Sections/Projects.json';
+	import Books from '$lib/Sections/Books.svelte'
+	import Books_data from '$lib/Sections/Books.json';
+	import Footer from '$lib/Sections/Footer.svelte'
 	//import Blog from "$lib/Sections/Blog.svelte";
 	//import Awards from "$lib/Sections/Awards.svelte";
 
@@ -32,6 +35,8 @@
 	<hr />
 	<Writings data={writings_data} />
 	<Projects data={projects_data}/>
+	<Books data={Books_data} shorten={true}/>
+	<Footer/>
 	<!--
     <Projects projects={data.projects} />
     <Awards awards={data.awards} {isMobile} />

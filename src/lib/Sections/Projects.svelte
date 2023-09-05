@@ -161,5 +161,17 @@
         .full-image {
             height:150px;
         }
+        .project-title {
+            font-size: 42px;
+        }
+        .tools-header {
+            font-size: 15px;
+        }
+        .project-tool {
+            font-size: 12px;
+        }
+        .project-description {
+            font-size: 20px;
+        }
 	}
 </style>
