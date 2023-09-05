@@ -110,7 +110,6 @@
 		background: white;
 		padding-top: 40px;
 		box-shadow: 0px 0px 30px 15px rgba(0, 0, 0, 0.2);
-        margin-bottom: 0px;
 	}
 	.project-description-container {
 		padding-top: 0pt;
@@ -155,8 +154,11 @@
 		.projects-container {
 			width: 97%;
 		}
+        .projects .col-left {
+            width: 25%;
+        }
 		.projects .col-right {
-			width: 95%;
+			width: 75%;
 		}
         .full-image {
             height:150px;

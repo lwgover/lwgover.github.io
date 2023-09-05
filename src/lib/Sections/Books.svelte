@@ -19,7 +19,7 @@
 				<p class="book-item">{book.title}</p>
 			{/each}
 			<div class="full-list">
-				<a target="_blank" rel="noopener noreferrer" href="./books/">Full Reading List Here</a>
+				<a target="_blank" rel="noopener noreferrer" href="./books">Full Reading List Here</a>
 			</div>
 		</div>
 	{:else}
@@ -119,6 +119,7 @@
 		margin: 0px;
 		scale: 1.01;
 	}
+
 	#even {
 		rotate: 3deg;
 	}
@@ -155,10 +156,31 @@
 		margin: 20px;
 		padding: 30px;
 		border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
 	}
 	.book-image-container:active {
 		rotate: -0deg;
 		scale: 1.1;
 		z-index: 1000;
+	}
+    @media screen and (max-width: 768px) {
+		.Books {
+            width: 92%;
+        }
+        .book-item-title {
+            font-size: 32pt;
+        }
+        .book-item-description {
+            font-size: 13.5pt;
+        }
+        .book-item {
+            font-size: 13.5pt;
+        }
+        .book-item-container {
+            margin:10px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
 	}
 </style>

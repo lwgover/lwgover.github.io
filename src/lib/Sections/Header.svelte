@@ -1,6 +1,5 @@
 <script>
 	import { onMount } from 'svelte';
-	import { gsap } from 'gsap';
 	import { windowHeight, windowWidth } from '../../stores/global.js';
 	import { prefersReducedMotion } from '../../stores/motion.js';
 	/**
@@ -27,9 +26,6 @@
 
 	import { sleep } from '../../scripts/utils.js';
 	import { transition } from '../../scripts/transitions/intro.js';
-	// @ts-ignore
-	import Window from '$lib/Window.svelte';
-
 	onMount(async () => {
 		if ($prefersReducedMotion) return;
 

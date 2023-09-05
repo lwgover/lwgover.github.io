@@ -152,10 +152,6 @@
 	img:last-child {
 		opacity: 1;
 	}
-	u {
-		text-decoration-thickness: 0.05em;
-		text-underline-offset: 7px;
-	}
 	@media screen and (min-width: 1001px) {
 		.writings .row {
 			display: flex;

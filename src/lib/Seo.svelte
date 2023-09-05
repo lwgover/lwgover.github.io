@@ -1,7 +1,7 @@
 <script>
     export let title = "Lucas Gover";
-    export let description = "University of Puget Sound Computer Science and Political Science recent graduate.";
-    export let keywords = "web design, data science, data visualization, politics, political science, progressive, books, reading, recent graduate, AI, ML, research, artificial intelligence";
+    export let description = "Personal Website for Lucas Gover | University of Puget Sound Computer Science and Political Science";
+    export let keywords = "Lucas Gover, Lucas, Gover, web design, data science, data visualization, politics, political science, progressive, books, reading, recent graduate, AI, ML, research, artificial intelligence";
   </script>
   
   <svelte:head>
