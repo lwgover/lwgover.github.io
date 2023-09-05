@@ -13,6 +13,8 @@
 		color: white;
 		font-size: 24px;
 		letter-spacing: 3px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 	.created-by {
 		display: relative;
@@ -20,14 +22,12 @@
 		font-size: 24px;
 		letter-spacing: 3px;
 		padding-left: 20px;
-        margin:auto
-	}
-	.row {
-		display: flex;
-		margin-right: 0px;
+        margin:auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
 	}
     .col {
-        display: flex;
         width:50%;
         height:100%;
         text-align: center;
@@ -40,4 +40,27 @@
 			rgba(var(--pure-background-color-rgb), 1) 100%
 		);
 	}
+    @media screen and (min-width: 601px) {
+		.row {
+			display: flex;
+		}
+	}
+    @media screen and (max-width: 768px) {
+        .get-in-touch {
+            font-size: 18pt;
+        }
+        .created-by {
+            font-size: 18pt;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .row {
+            display: relative;
+        }
+        .col {
+            display: inline;
+            width:100%;
+        }
+        
+    }
 </style>

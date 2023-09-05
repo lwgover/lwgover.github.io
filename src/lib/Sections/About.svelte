@@ -30,7 +30,7 @@
 				Throughout college, I was involved in competitive programming, built strong hall communities
 				as an RA, and developed a love for teaching as a TA, tutor, and instructor. Plus, I worked
 				on research papers in both Artificial Intelligence and Politics. In my free time I love to
-				bike, go to coffee shops, and read - I'm especially into science fiction and politics books.
+				bike, explore new coffee shops, and read - I'm especially into science fiction and politics books.
 				You can check out all I'm reading <a href="./books/">here</a>.
 			</p>
 		</div>

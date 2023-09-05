@@ -18,9 +18,9 @@
 			{#each data.items[0].books as book}
 				<p class="book-item">{book.title}</p>
 			{/each}
-			<div class="full-list">
-				<a target="_blank" rel="noopener noreferrer" href="./books">Full Reading List Here</a>
-			</div>
+			<a target="_blank" class="full-list" rel="noopener noreferrer" href="./books"
+				><div>Full Reading List Here</div>
+			</a>
 		</div>
 	{:else}
 		{#each data.items as item, i}
@@ -53,16 +53,16 @@
 		font-size: 20px;
 		border-color: #666;
 	}
-	.full-list a {
+	a {
 		position: relative;
 		color: #000;
 		text-decoration: none;
-        letter-spacing: 2px;
+		letter-spacing: 2px;
 	}
 
-	.full-list a:hover {
+	a:hover {
 		color: #000;
-        text-decoration: underline;
+		text-decoration: underline;
 	}
 	.book-item-description {
 		font-family: var(--font-sans);
@@ -119,36 +119,37 @@
 		margin: 0px;
 		scale: 1.01;
 	}
-
-	#even {
-		rotate: 3deg;
-	}
-	#odd {
-		rotate: -3deg;
-	}
-	#even-end {
-		rotate: 1deg;
-	}
-	#odd-end {
-		rotate: -1deg;
-	}
-	#even,
-	#odd,
-	#even-end,
-	#odd-end {
-		position: relative;
-		z-index: 0;
-		transition: rotate 0.3s, scale 0.3s, margin-top 0.2s, margin-bottom 0.2s;
-	}
-	#even:active,
-	#odd:active,
-	#even-end:active,
-	#odd-end:active {
-		rotate: -0deg;
-		scale: 1.05;
-		z-index: 1000;
-		margin-top: 40px;
-		margin-bottom: 40px;
+	@media screen and (min-width: 769px) {
+		#even {
+			rotate: 3deg;
+		}
+		#odd {
+			rotate: -3deg;
+		}
+		#even-end {
+			rotate: 1deg;
+		}
+		#odd-end {
+			rotate: -1deg;
+		}
+		#even,
+		#odd,
+		#even-end,
+		#odd-end {
+			position: relative;
+			z-index: 0;
+			transition: rotate 0.3s, scale 0.3s, margin-top 0.2s, margin-bottom 0.2s;
+		}
+		#even:active,
+		#odd:active,
+		#even-end:active,
+		#odd-end:active {
+			rotate: -0deg;
+			scale: 1.05;
+			z-index: 1000;
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
 	}
 	.book-item-container {
 		background-color: white;
@@ -156,31 +157,31 @@
 		margin: 20px;
 		padding: 30px;
 		border-radius: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 	.book-image-container:active {
 		rotate: -0deg;
 		scale: 1.1;
 		z-index: 1000;
 	}
-    @media screen and (max-width: 768px) {
+	@media screen and (max-width: 768px) {
 		.Books {
-            width: 92%;
-        }
-        .book-item-title {
-            font-size: 32pt;
-        }
-        .book-item-description {
-            font-size: 13.5pt;
-        }
-        .book-item {
-            font-size: 13.5pt;
-        }
-        .book-item-container {
-            margin:10px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-        }
+			width: 92%;
+		}
+		.book-item-title {
+			font-size: 32pt;
+		}
+		.book-item-description {
+			font-size: 13.5pt;
+		}
+		.book-item {
+			font-size: 13.5pt;
+		}
+		.book-item-container {
+			margin: 10px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
 	}
 </style>
