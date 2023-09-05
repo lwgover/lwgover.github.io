@@ -1,11 +1,6 @@
 <script>
 	import Seo from '$lib/Seo.svelte';
-	import Header from '$lib/Sections/Header.svelte';
-	import About from '$lib/Sections/About.svelte';
-	import Writings from '$lib/Sections/Writings.svelte';
-	import writings_data from '$lib/Sections/Writings.json';
-	import Projects from '$lib/Sections/Projects.svelte'
-	import projects_data from '$lib/Sections/Projects.json';
+	import Back from '$lib/back.svelte'
 	import Books from '$lib/Sections/Books.svelte'
 	import Books_data from '$lib/Sections/Books.json';
 	import Footer from '$lib/Sections/Footer.svelte'
@@ -27,6 +22,7 @@
 
 <svelte:window bind:innerWidth={pageWidth} bind:innerHeight={pageHeight} bind:scrollY={scroll}/>
 <Seo title={"Books | Lucas Gover"} description={"Lucas's reading list"} keywords={"books, currently reading, read, student, computer science, political theory, political science, science fiction"}/>
+<Back/>
 <main id="home">
 	<Books data={Books_data} shorten={false}/>
 	<Footer/>

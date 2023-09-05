@@ -18,7 +18,7 @@
 			{#each data.items[0].books as book}
 				<p class="book-item">{book.title}</p>
 			{/each}
-			<a target="_blank" class="full-list" rel="noopener noreferrer" href="./books"
+			<a class="full-list" href="./books"
 				><div>Full Reading List Here</div>
 			</a>
 		</div>

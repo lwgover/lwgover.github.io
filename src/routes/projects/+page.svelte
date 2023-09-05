@@ -1,12 +1,10 @@
 <script>
 	import Seo from '$lib/Seo.svelte';
-	import Header from '$lib/Sections/Header.svelte';
-	import About from '$lib/Sections/About.svelte';
-	import Writings from '$lib/Sections/Writings.svelte';
-	import writings_data from '$lib/Sections/Writings.json';
 	import Projects from '$lib/Sections/Projects.svelte'
 	import projects_data from '$lib/Sections/Projects.json';
 	import Footer from '$lib/Sections/Footer.svelte'
+	import Back from '$lib/back.svelte';
+
 	//import Blog from "$lib/Sections/Blog.svelte";
 	//import Awards from "$lib/Sections/Awards.svelte";
 
@@ -25,6 +23,7 @@
 
 <svelte:window bind:innerWidth={pageWidth} bind:innerHeight={pageHeight} bind:scrollY={scroll}/>
 <Seo title={"Projects | Lucas Gover"} description={"Lucas's selected project portfolio"} keywords={""}/>
+<Back color={'black'}/>
 <main id="home">
 	<Projects data={projects_data}/>
 	<Footer/>

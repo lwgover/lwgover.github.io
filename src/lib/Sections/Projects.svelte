@@ -164,7 +164,7 @@
             height:150px;
         }
         .project-title {
-            font-size: 42px;
+            font-size: 38px;
         }
         .tools-header {
             font-size: 14px;
@@ -173,7 +173,7 @@
             font-size: 11px;
         }
         .project-description {
-            font-size: 20px;
+            font-size: 18px;
         }
 	}
 </style>
