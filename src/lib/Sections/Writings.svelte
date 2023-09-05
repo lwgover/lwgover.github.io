@@ -57,6 +57,9 @@
 </section>
 
 <style>
+	.writings {
+		margin-bottom: 50px;
+	}
 	.writing-title a {
 		color: white;
 	}

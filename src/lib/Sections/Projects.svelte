@@ -27,7 +27,7 @@
 				</div>
 				<div class="col col-right project-description-container">
 					<p class="project-description">{datum.description}</p>
-					<a target="_blank" rel="noopener noreferrer"href={datum.link}>
+					<a target="_blank" rel="noopener noreferrer" href={datum.link}>
 						<button class="check-it-out-button">Check it out ⇛</button>
 					</a>
 				</div>
@@ -108,9 +108,9 @@
 	}
 	.projects {
 		background: white;
-		margin-top: 50px;
 		padding-top: 40px;
 		box-shadow: 0px 0px 30px 15px rgba(0, 0, 0, 0.2);
+        margin-bottom: 0px;
 	}
 	.project-description-container {
 		padding-top: 0pt;

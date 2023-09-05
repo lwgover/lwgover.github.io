@@ -22,38 +22,46 @@
 		</div>
 	</div>
 	<div class="column" id="text-card">
-		<p id="about-text">
-			I am a recent graduate from the University of Puget Sound, with a double major in Computer
-			Science and Politics & Government. I am very passionate about both majors and particularly
-			their intersection. As I worked with teams throughout college, I demonstrated my leadership
-			abilities by representing my university in competitive programming competitions and by
-			teaching as a TA, Tutor, and Lead Instructor. On top of that, I have explored my interests
-			further by publishing research papers in both fields – Politics and Artificial Intelligence.
-			These experiences have contributed to a deepened curiosity and deepened my passion for both
-			disciplines. I am excited to bring this same energy to professional work environments and help
-			others do the same.
-		</p>
+		<div class="text-card-container">
+			<h2 class='about-title'>About Me</h2>
+			<p id="about-text">
+				I am a recent graduate from the University of Puget Sound, with degrees in
+				Computer Science and Politics & Government, two things I'm really passionate about.
+				Throughout college, I was involved in competitive programming, built strong hall communities
+				as an RA, and developed a love for teaching as a TA, tutor, and instructor. Plus, I worked
+				on research papers in both Artificial Intelligence and Politics. In my free time I love to
+				bike, go to coffee shops, and read - I'm especially into science fiction and politics books.
+				You can check out all I'm reading <a href="./books/">here</a>.
+			</p>
+		</div>
 	</div>
 </div>
 
 <style>
+	.about-title {
+		display: relative;
+		font-size: 44pt;
+		color: var(--primary-color);
+		font-style:italic;
+		letter-spacing: 3px;
+
+	}
 	#pic-and-socials {
 		margin: auto;
-		padding-bottom: 20px; 
+		padding-bottom: 20px;
 	}
-  .row {
-  position: relative;
-  vertical-align: middle;
-}
+	.row {
+		position: relative;
+		vertical-align: middle;
+	}
 
-.column {
-  flex-basis: 50%;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-
-}
+	.column {
+		flex-basis: 50%;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 	#text-card {
 		background: white;
 		box-shadow: 0px 0px 15px 5px rgba(0, 0, 50, 0.1);
@@ -87,14 +95,14 @@
 		width: 50%;
 		border-radius: 50%;
 		box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.2);
-    margin:20px;
+		margin: 20px;
 	}
 	img:hover {
 		transform: scale(1.1);
-		-ms-transform: scale(1.1); 
-		-moz-transform: scale(1.1); 
+		-ms-transform: scale(1.1);
+		-moz-transform: scale(1.1);
 		-webkit-transform: scale(1.1);
-		-o-transform: scale(1.1); 
+		-o-transform: scale(1.1);
 	}
 	@media screen and (max-width: 1000px) {
 		.row {
@@ -107,9 +115,9 @@
 			font-size: 1rem;
 		}
 	}
-  @media screen and (min-width: 1001px) {
+	@media screen and (min-width: 1001px) {
 		.row {
 			display: flex;
 		}
-	} 
+	}
 </style>
