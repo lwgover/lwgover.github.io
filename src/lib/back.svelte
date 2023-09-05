@@ -7,11 +7,11 @@
 
 <style>
     .back {
-        position:absolute;
         top:0px;
         left:0px;
         z-index: 1000;
         transform: scale(1,0.95);
+        position: fixed;
     }
     .back-link {
         font-size: 48px;
