@@ -167,10 +167,10 @@
             font-size: 42px;
         }
         .tools-header {
-            font-size: 15px;
+            font-size: 14px;
         }
         .project-tool {
-            font-size: 12px;
+            font-size: 11px;
         }
         .project-description {
             font-size: 20px;

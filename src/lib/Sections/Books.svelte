@@ -99,14 +99,14 @@
 		border-radius: 15px;
 		margin-top: 0px;
 		margin-bottom: 0px;
-		transition: rotate 0.3s, scale 0.3s, margin-top 0.2s, margin-bottom 0.2s;
+		transition: rotate 0.5s, scale 1.2s, margin-top 1.2s, margin-bottom 1.2s;
 		box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
 		padding: 0px;
 		overflow: hidden;
 		height: fit-content;
 		padding-bottom: -5px;
 	}
-	.book-image-container:active {
+	.book-image-container:hover {
 		rotate: -0deg;
 		scale: 1.1;
 		z-index: 1000;
@@ -117,39 +117,37 @@
 		max-width: 100%;
 		float: center;
 		margin: 0px;
-		scale: 1.01;
+		scale: 1.05;
 	}
-	@media screen and (min-width: 769px) {
-		#even {
-			rotate: 3deg;
-		}
-		#odd {
-			rotate: -3deg;
-		}
-		#even-end {
-			rotate: 1deg;
-		}
-		#odd-end {
-			rotate: -1deg;
-		}
-		#even,
-		#odd,
-		#even-end,
-		#odd-end {
-			position: relative;
-			z-index: 0;
-			transition: rotate 0.3s, scale 0.3s, margin-top 0.2s, margin-bottom 0.2s;
-		}
-		#even:active,
-		#odd:active,
-		#even-end:active,
-		#odd-end:active {
-			rotate: -0deg;
-			scale: 1.05;
-			z-index: 1000;
-			margin-top: 40px;
-			margin-bottom: 40px;
-		}
+	#even {
+		rotate: 3deg;
+	}
+	#odd {
+		rotate: -3deg;
+	}
+	#even-end {
+		rotate: 1deg;
+	}
+	#odd-end {
+		rotate: -1deg;
+	}
+	#even,
+	#odd,
+	#even-end,
+	#odd-end {
+		position: relative;
+		z-index: 0;
+		transition: rotate 0.5s, scale 1.2s, margin-top 1.2s, margin-bottom 1.2s;
+	}
+	#even:hover,
+	#odd:hover,
+	#even-end:hover,
+	#odd-end:hover {
+		rotate: -0deg;
+		scale: 1.05;
+		z-index: 1000;
+		margin-top: 40px;
+		margin-bottom: 40px;
 	}
 	.book-item-container {
 		background-color: white;
@@ -160,7 +158,7 @@
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
-	.book-image-container:active {
+	.book-image-container:hover {
 		rotate: -0deg;
 		scale: 1.1;
 		z-index: 1000;
