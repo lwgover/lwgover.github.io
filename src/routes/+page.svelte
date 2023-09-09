@@ -36,6 +36,7 @@
 	<Writings data={writings_data} />
 	<Projects data={projects_data}/>
 	<Books data={Books_data} shorten={true}/>
+	<div class='extra-spacing' style={`margin-top: ${isMobile ? '100' : '0'}px;`}>
 	<Footer/>
 	<!--
     <Projects projects={data.projects} />
@@ -46,6 +47,7 @@
 
 <style>
 	main {
+		display: grid;
 		width: 100%;
 		margin: 0 auto;
 

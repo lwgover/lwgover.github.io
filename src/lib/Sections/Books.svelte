@@ -42,6 +42,7 @@
 			</div>
 		{/each}
 	{/if}
+	<div class='extra-padding' />
 </section>
 
 <style>
@@ -180,6 +181,9 @@
 			margin: 10px;
 			margin-top: 0px;
 			margin-bottom: 0px;
+		}
+		.extra-padding {
+			margin-top:80px;
 		}
 	}
 </style>

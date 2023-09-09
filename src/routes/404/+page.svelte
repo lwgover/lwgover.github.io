@@ -1,11 +1,7 @@
 <script>
 	import Seo from '$lib/Seo.svelte';
 	import Back from '$lib/back.svelte';
-	import Books from '$lib/Sections/Books.svelte';
-	import Books_data from '$lib/Sections/Books.json';
 	import Footer from '$lib/Sections/Footer.svelte';
-	//import Blog from "$lib/Sections/Blog.svelte";
-	//import Awards from "$lib/Sections/Awards.svelte";
 
 	/**
 	 * @type {number}
@@ -24,34 +20,105 @@
 <Seo title={'404 | Lucas Gover'} description={'404'} keywords={''} />
 <Back />
 <main id="home">
-	<div class="background-container">
-		<section class="page-404">
-			<div class="title">404</div>
-			<div class="description-404">
-				<div class="description-text-highlight">Couldn't find the page you were looking for</div>
-			</div>
-			<div class="image-container-404">
-				<img src="./images/404.JPG" alt="You Seem to Be Lost" />
-			</div>
-			<form action="./" class='return-form'>
-                <input type="submit" value="Return To Home" class='return-to-home'/>
-            </form>
-			<Footer />
-		</section>
-		<!--
-    <Projects projects={data.projects} />
-    <Awards awards={data.awards} {isMobile} />
-    <Blog posts={data.posts} {isMobile} /> 
-	-->
+	<div class=everything-container>
+	<div class="image-container-404">
+		<img src="./images/404.JPG" alt="You Seem to Be Lost" />
+		<div class='text-container-404'>
+		<div class="title">404</div>
+		<div class="description-404">
+			<div class="description-text-highlight">You seem to be a bit lost</div>
+			<!--<div class="description-text-highlight">Couldn't find the page you were looking for</div>-->
+		</div>
+		</div>
 	</div>
+	<form action="./" class="return-form">
+		<input type="submit" value="Return To Home" class="return-to-home" />
+	</form>
+	</div>
+	<Footer />
 </main>
 
 <style>
-    .return-form {
-        position:relative;
-        padding-top:100px;
-        padding-bottom:100px;
-    }
+	.description-text-highlight {
+		color: var(--primary-color);
+		background-color: rgba(255, 255, 255, 0.9);
+		width: fit-content;
+		text-align: center;
+		border-radius: 3px;
+		letter-spacing: 2px;
+		font-style: italic;
+		margin: auto;
+		margin-top: 1vh;
+		font-size: 30px;
+		padding:3px;
+		
+	}
+	.description-404 {
+		position:absolute;
+		font-weight: 300;
+		letter-spacing: -0.05rem;
+		overflow: hidden;
+		text-align: center;
+		margin: auto;
+		z-index: 1000;
+		width:100%;
+		margin:auto;
+		margin-top:50px;
+	}
+	main {
+		width: 100%;
+		margin: 0 auto;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		/* background-color: var(--primary-color); */
+		z-index: 100; /* This is over the nav */
+		position: relative;
+		background-image: url('/images/backdrops/topography.svg');
+	}
+	img {
+		width: 100%;
+	}
+	.everything-container {
+		position: relative;
+		overflow: hidden;
+		margin: auto;
+		border-radius: 20px;
+		text-align: center;
+	}
+	.image-container-404 {
+		position: relative;
+		max-width: 60%;
+		max-height: 70vh;
+		overflow: hidden;
+		margin: auto;
+		border-radius: 20px;
+		text-align: center;
+	}
+	.title {
+		margin-top: 0;;
+		color: rgba(255, 255, 255, 0.5);
+		font-weight: 600;
+		letter-spacing: -0.05rem;
+		text-transform: uppercase;
+		font-size: 20vw;
+		text-align: center;
+		-webkit-text-stroke: 5px white;
+	}
+	.text-container-404 {
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.return-form {
+		position: relative;
+		margin: 20px;
+	}
 	.return-to-home {
         position:relative;
 		background-color: rgba(255, 255, 255, 0.2);
@@ -66,130 +133,10 @@
 		font-family: var(--font-serif);
 		font-weight: 400;
 		font-size: 30px;
-		font-style: italic;
-		float: center;
-		margin: auto;
-		margin-left: auto;
-		margin-right: auto;
-        display: block;
-		overflow: hidden;
-		text-align: center;
-		position: absolute;
-		margin: auto;
-		text-align: center;
-		left: 0;
-		right: 0;
-		margin-left: auto;
-		margin-right: auto;
-		float: center;
-		z-index: 1000;
-        width:fit-content;
-	}
-	.description-text-highlight {
-		color: var(--primary-color);
-		background-color: rgba(255, 255, 255, 0.9);
-		width: fit-content;
-		text-align: center;
-		float: center;
-		margin: auto;
-		padding: 5px;
-		border-radius: 3px;
-		letter-spacing: 2px;
-		font-style: italic;
-	}
-	.description-404 {
-		display: block;
-		font-weight: 300;
-		letter-spacing: -0.05rem;
-		overflow: hidden;
-		font-size: 3vw;
-		text-align: center;
-		position: absolute;
-		margin: auto;
-		text-align: center;
-		left: 0;
-		right: 0;
-		margin-left: auto;
-		margin-right: auto;
-		float: center;
-		z-index: 1000;
-		padding-top: 42%;
-	}
-	.page-404 {
-		margin-top: auto;
-		margin-bottom: auto;
-	}
-	.background-container {
-		background-image: url('/images/backdrops/topography.svg');
-		min-height: 100%;
-		position: absolute;
-		padding-top: 40px;
-		padding-bottom: 30px;
-	}
-	img {
-		width: 100%;
-	}
-	.image-container-404 {
-		max-height: 85vh;
-		max-width: 80%;
-		overflow: hidden;
-		margin: auto;
-		border-radius: 25px;
-		margin-top: 40px;
-		box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.1);
-	}
-	.title {
-		color: rgba(255, 255, 255, 0.5);
-		display: block;
-		font-weight: 600;
-		letter-spacing: -0.05rem;
-		text-transform: uppercase;
-		overflow: hidden;
-		font-size: 25vw;
-		text-align: center;
-		-webkit-text-stroke: 5px white;
-		position: absolute;
-		margin: auto;
-		text-align: center;
-		left: 0;
-		right: 0;
-		margin-left: auto;
-		margin-right: auto;
-		float: center;
-		padding-top: 30px;
-	}
-	main {
-		width: 100%;
-		height: 100%;
-		margin: 0 auto;
-
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-
-		/* background-color: var(--primary-color); */
-		z-index: 100; /* This is over the nav */
-		position: absolute;
-		background: linear-gradient(
-			to bottom,
-			rgba(var(--primary-color-rgb), 1) -150%,
-			rgba(var(--pure-background-color-rgb), 1) 250%
-		);
-	}
-    @media screen and (min-width: 1000px) {
-		.return-form {
-            padding-top: 25px;
-            padding-bottom: 50px;
-        }
-        main {
-            height:120%;
-        }
-	}
-
-	/* On desktop, do the cool sticky footer that reveals on scroll */
-	/* @media screen and (min-width: 768px) {
-      main {
-        position: relative;
-      }
-    } */
+		font-style: italic;}
+		@media screen and (max-width: 1000px) {
+			.image-container-404 {
+				max-width: 95%;
+			}	
+		}
 </style>

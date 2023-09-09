@@ -31,13 +31,28 @@
 				as an RA, and developed a love for teaching as a TA, tutor, and instructor. Plus, I worked
 				on research papers in both Artificial Intelligence and Politics. In my free time I love to
 				bike, explore new coffee shops, and read - I'm especially into science fiction and politics books.
-				You can check out all I'm reading <a href="./books/">here</a>.
 			</p>
+			<div class='about-links'>
+			<a class= 'about-item' href="./books/">Check out what I'm reading →</a>
+			<!--<a class='about-item' target="_blank" rel="noopener noreferrer" href='./pdfs/resume.pdf'>Check out my Resume →</a>-->
+			</div>
 		</div>
 	</div>
 </div>
 
 <style>
+	.about-item{
+		width:100%;
+		color: #555;
+		display: block;
+		font-family: var(--font-sans);
+		padding-bottom: 8px;
+		font-size: 13pt;
+	}
+	.about-links {
+		padding-left:8px;
+		display:relative;
+	}
 	.about-title {
 		display: relative;
 		font-size: 44pt;
@@ -70,7 +85,7 @@
 	}
 
 	#about-text {
-		color: black;
+		color: #333;
 		margin-top: 30px;
 		margin-bottom: 30px;
 		box-shadow: 0px 0px 0px 0px rgba(0, 0, 50, 0.1);
