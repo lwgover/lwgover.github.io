@@ -1,5 +1,5 @@
 <script>
-	import { fade, slide, fly} from 'svelte/transition';
+	import { fade, slide, fly } from 'svelte/transition';
 	/**
 	 * @type {{ items: any; }}
 	 */
@@ -23,14 +23,14 @@
 			<div class="image-container">
 				{#each data.items as datum, i}
 					{#key datum}
-					<a href={datum.link} target="_blank" rel="noopener noreferrer" out:fade in:fade>
-						<img
-							src={`${datum.photo}`}
-							alt="birds paper"
-							style={`transform: rotate(${(i - 1) * 7}deg);`}
-							class="image center"
-						/>
-					</a>
+						<a href={datum.link} target="_blank" rel="noopener noreferrer" out:fade in:fade>
+							<img
+								src={`${datum.photo}`}
+								alt="birds paper"
+								style={`transform: rotate(${(i - 1) * 7}deg);`}
+								class="image center"
+							/>
+						</a>
 					{/key}
 				{/each}
 			</div>
@@ -38,7 +38,11 @@
 
 		<div class="col col-right">
 			{#key curr_datum}
-				<div class="writing-desc-header" in:fly={{duration: 1000, delay: 600 }} out:fly={{duration: 600}}>
+				<div
+					class="writing-desc-header"
+					in:fly={{ duration: 1000, delay: 600 }}
+					out:fly={{ duration: 600 }}
+				>
 					<h2 class="writing-title">
 						<a target="_blank" rel="noopener noreferrer" href={curr_datum.link}
 							>{curr_datum.title}</a
@@ -47,10 +51,20 @@
 					<h3 class="writing-desc">{curr_datum.authors}</h3>
 					<h3 class="writing-desc">{curr_datum.purpose}</h3>
 				</div>
-				<p class="writing-abstract" style="text-align:left" in:slide={{duration: 1000,delay: 1000 }} out:slide={{duration: 600}}>
+				<p
+					class="writing-abstract"
+					style="text-align:left"
+					in:slide={{ duration: 1000, delay: 1000 }}
+					out:slide={{ duration: 600 }}
+				>
 					{curr_datum.abstract}
 				</p>
-				<button class="next-button" on:click={next} in:slide={{duration: 1000,delay: 1000 }} out:slide={{duration: 600}}>Next</button>
+				<button
+					class="next-button"
+					on:click={next}
+					in:slide={{ duration: 1000, delay: 1000 }}
+					out:slide={{ duration: 600 }}>Next</button
+				>
 			{/key}
 		</div>
 	</div>
@@ -59,6 +73,7 @@
 <style>
 	.writings {
 		margin-bottom: 50px;
+		height:600px;
 	}
 	.writing-title a {
 		color: white;
@@ -119,7 +134,7 @@
 		margin: 0;
 		text-align: center;
 		top: 6.25%;
-		margin-bottom:80px;
+		margin-bottom: 80px;
 	}
 
 	.image {
@@ -151,6 +166,11 @@
 
 	img:last-child {
 		opacity: 1;
+	}
+	@media screen and (max-width: 1050px) {
+		.writings {
+			height:650px;
+		}
 	}
 	@media screen and (min-width: 1001px) {
 		.writings .row {
@@ -190,7 +210,7 @@
 		.writing-abstract {
 			padding: 40px;
 			padding-top: 10px;
-			font-size:14px;
+			font-size: 14px;
 		}
 		.writing-title {
 			font-size: 32px;
@@ -198,5 +218,44 @@
 		.writing-desc {
 			font-size: 17px;
 		}
+		.writings {
+			height:900px;
+		}
 	}
+	@media screen and (max-width: 913px) {
+		.writings {
+			height:950px;
+		}
+	}
+	@media screen and (max-width: 876px) {
+		.writings {
+			height:1050px;
+		}
+	}
+	@media screen and (max-width: 784px) {
+		.writings {
+			height:1080px;
+		}
+	}
+	@media screen and (max-width: 616px) {
+		.writings {
+			height:1120px;
+		}
+	}
+	@media screen and (max-width: 545px){
+		.writings {
+			height:1180px;
+		}
+	}
+	@media screen and (max-width: 524px){
+		.writings {
+			height:1300px;
+		}
+	}
+	@media screen and (max-width: 460px){
+		.writings {
+			height:1200px;
+		}
+	}
+	
 </style>
