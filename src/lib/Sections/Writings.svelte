@@ -26,7 +26,7 @@
 						<a href={datum.link} target="_blank" rel="noopener noreferrer" out:fade in:fade>
 							<img
 								src={`${datum.photo}`}
-								alt="birds paper"
+								alt="paper"
 								style={`transform: rotate(${(i - 1) * 7}deg);`}
 								class="image center"
 							/>
@@ -73,7 +73,6 @@
 <style>
 	.writings {
 		margin-bottom: 50px;
-		height:600px;
 	}
 	.writing-title a {
 		color: white;
@@ -217,44 +216,6 @@
 		}
 		.writing-desc {
 			font-size: 17px;
-		}
-		.writings {
-			height:900px;
-		}
-	}
-	@media screen and (max-width: 913px) {
-		.writings {
-			height:950px;
-		}
-	}
-	@media screen and (max-width: 876px) {
-		.writings {
-			height:1050px;
-		}
-	}
-	@media screen and (max-width: 784px) {
-		.writings {
-			height:1080px;
-		}
-	}
-	@media screen and (max-width: 616px) {
-		.writings {
-			height:1120px;
-		}
-	}
-	@media screen and (max-width: 545px){
-		.writings {
-			height:1180px;
-		}
-	}
-	@media screen and (max-width: 524px){
-		.writings {
-			height:1300px;
-		}
-	}
-	@media screen and (max-width: 460px){
-		.writings {
-			height:1200px;
 		}
 	}
 	
