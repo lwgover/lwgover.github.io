@@ -4,6 +4,7 @@
 	 */
 	export let data;
 	export let shorten = false;
+	export let isMobile = false;
 </script>
 
 <section class="Books">
@@ -42,7 +43,7 @@
 			</div>
 		{/each}
 	{/if}
-	<div class='extra-padding' />
+	<div class='extra-spacing' style={`margin-top: ${isMobile ? '100' : '0'}px;`}>
 </section>
 
 <style>
@@ -181,9 +182,6 @@
 			margin: 10px;
 			margin-top: 0px;
 			margin-bottom: 0px;
-		}
-		.extra-padding {
-			margin-top:80px;
 		}
 	}
 </style>

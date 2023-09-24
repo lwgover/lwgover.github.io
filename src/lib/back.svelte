@@ -14,7 +14,7 @@
         position: fixed;
     }
     .back-link {
-        font-size: 48px;
+        font-size: 7vh;
         font-weight: 1000;
         padding: 10px;
         font-family: var(--font-sans);

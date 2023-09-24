@@ -4,11 +4,12 @@
 	import About from '$lib/Sections/About.svelte';
 	import Writings from '$lib/Sections/Writings.svelte';
 	import writings_data from '$lib/Sections/Writings.json';
-	import Projects from '$lib/Sections/Projects.svelte'
+	import Projects from '$lib/Sections/Projects.svelte';
 	import projects_data from '$lib/Sections/Projects.json';
-	import Books from '$lib/Sections/Books.svelte'
+	import Books from '$lib/Sections/Books.svelte';
 	import Books_data from '$lib/Sections/Books.json';
-	import Footer from '$lib/Sections/Footer.svelte'
+	import Footer from '$lib/Sections/Footer.svelte';
+	import Scrolly from '$lib/scrolly.svelte';
 	//import Blog from "$lib/Sections/Blog.svelte";
 	//import Awards from "$lib/Sections/Awards.svelte";
 
@@ -23,22 +24,26 @@
 	$: isMobile = pageWidth < 768;
 	let scroll = 0;
 	let parallax_rate = -1.001;
+	/**
+	 * @type {any}
+	 */
+	let currentStep;
 </script>
 
-<svelte:window bind:innerWidth={pageWidth} bind:innerHeight={pageHeight} bind:scrollY={scroll}/>
+<svelte:window bind:innerWidth={pageWidth} bind:innerHeight={pageHeight} bind:scrollY={scroll} />
 <Seo />
 <main id="home">
 	<div class="parallax" style:transform={`translate3d(0, ${scroll * parallax_rate}px,0)`}>
-	<Header />
-</div>
+		<Header />
+	</div>
 	<About />
 	<hr />
 	<Writings data={writings_data} />
-	<Projects data={projects_data}/>
-	<Books data={Books_data} shorten={true}/>
-	<div class='extra-spacing' style={`margin-top: ${isMobile ? '100' : '0'}px;`}>
-	<Footer/>
-	<!--
+	<Projects data={projects_data} />
+	<Books data={Books_data} shorten={true} {isMobile} />
+	<div class="extra-spacing" style={`margin-top: ${isMobile ? '100' : '0'}px;`}/>
+		<Footer />
+		<!--
     <Projects projects={data.projects} />
     <Awards awards={data.awards} {isMobile} />
     <Blog posts={data.posts} {isMobile} /> 

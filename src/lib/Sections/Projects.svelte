@@ -46,14 +46,14 @@
 <style>
 	.full-image {
 		position: relative;
-        background-size: 100%;
-		height:300px;
+		background-size: 100%;
+		height: 300px;
 		transform: scale(1.25);
 		z-index: 1;
 		margin-top: 40px;
-        border-color: white;
-        border-top-width: 2px;
-        display: block;
+		border-color: white;
+		border-top-width: 2px;
+		display: block;
 	}
 	.full-image::before {
 		content: '';
@@ -77,11 +77,11 @@
 		font-size: 20px;
 		margin-top: 30px;
 		z-index: 10;
-        margin-bottom:30px;
+		margin-bottom: 30px;
 	}
-    .check-it-out-button:hover {
-        background-color: rgb(33, 113, 131);
-    }
+	.check-it-out-button:hover {
+		background-color: rgb(33, 113, 131);
+	}
 	.project-tool {
 		margin: 5px;
 		text-align: center;
@@ -101,7 +101,7 @@
 		color: #aaa;
 		width: fit-content;
 		float: right;
-        width:100%; 
+		width: 100%;
 	}
 	.projects .section-title {
 		color: #333;
@@ -150,30 +150,39 @@
 	.projects .col-right {
 		width: 80%;
 	}
-	@media screen and (max-width: 1000px) {
+	@media screen and (max-width: 768px) {
 		.projects-container {
 			width: 97%;
 		}
-        .projects .col-left {
-            width: 25%;
-        }
+		.projects .col-left {
+			width: 25%;
+		}
 		.projects .col-right {
 			width: 75%;
 		}
-        .full-image {
-            height:150px;
-        }
-        .project-title {
-            font-size: 38px;
-        }
-        .tools-header {
-            font-size: 14px;
-        }
-        .project-tool {
-            font-size: 11px;
-        }
-        .project-description {
-            font-size: 18px;
-        }
+		.full-image {
+			height: 150px;
+		}
+		.project-title {
+			font-size: 38px;
+		}
+		.tools-header {
+			font-size: 14px;
+		}
+		.project-tool {
+			font-size: 11px;
+		}
+		.project-description {
+			font-size: 18px;
+		}
 	}
+	/**
+	@media screen and (min-width: 768px) {
+		.projects {
+			margin-left: 2%;
+			margin-right:2%;
+			border-radius: 12px;
+		}
+	}
+	*/
 </style>

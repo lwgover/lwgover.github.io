@@ -166,11 +166,6 @@
 	img:last-child {
 		opacity: 1;
 	}
-	@media screen and (max-width: 1050px) {
-		.writings {
-			height:650px;
-		}
-	}
 	@media screen and (min-width: 1001px) {
 		.writings .row {
 			display: flex;
