@@ -126,9 +126,6 @@
 		padding-right: 5vw;
 		margin:2vh;
 	}
-	.submitted-container {
-		width: 100%;
-	}
 	.submission-subtitle {
 		margin: auto;
 		text-align: center;

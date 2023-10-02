@@ -3,6 +3,7 @@
 
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
+    export let height = '55vh'
 	// @ts-nocheck
 	let reviews = [
 		{ loading: 'true' },
@@ -40,7 +41,7 @@
 	onMount(() => load_reviews());
 </script>
 
-<div class="view-recommendations-container">
+<div class="view-recommendations-container" style={`height: ${height}`}>
 	{#each reviews as review, i}
 		<div class="review-card-container">
 			{#if review['loading']}
@@ -76,7 +77,7 @@
 				</div>
 			{:else}
 				<div class="review-card-desc" transition:fade={{ delay: 650 + 300 * i, duration: 300 }}>
-					{review['description']}
+					{review['recommendation']}
 				</div>
 			{/if}
 		</div>

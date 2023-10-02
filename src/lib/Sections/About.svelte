@@ -35,6 +35,7 @@
 			<div class='about-links'>
 			<a class= 'about-item' href="./books/">Check out what I'm reading →</a>
 			<a class='about-item' target="_blank" rel="noopener noreferrer" href='./pdfs/resume.pdf'>Check out my Resume →</a>
+			<a class='about-item' href='./book-recommendations'>Recommend me a Book →</a>
 			</div>
 		</div>
 	</div>
