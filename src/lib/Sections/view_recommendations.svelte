@@ -77,7 +77,7 @@
 				</div>
 			{:else}
 				<div class="review-card-desc" transition:fade={{ delay: 650 + 300 * i, duration: 300 }}>
-					{review['recommendation']}
+					{review['recommendation'].replace("''", "'")}
 				</div>
 			{/if}
 		</div>

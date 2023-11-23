@@ -31,7 +31,7 @@
 		</div>
 		</div>
 	</div>
-	<form action="./" class="return-form">
+	<form action="https://www.lucasgover.com/" class="return-form">
 		<input type="submit" value="Return To Home" class="return-to-home" />
 	</form>
 	</div>

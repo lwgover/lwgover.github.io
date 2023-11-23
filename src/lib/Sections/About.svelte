@@ -42,6 +42,22 @@
 </div>
 
 <style>
+	@keyframes picture-hover-in {
+		from {
+			transform: scale(1.0);
+		}
+		to {
+			transform: scale(1.1)
+		}
+	}
+	@keyframes picture-hover-out {
+		from {
+			transform: scale(1.1);
+		}
+		to {
+			transform: scale(1.0)
+		}
+	}
 	.about-item{
 		width:100%;
 		color: #555;
@@ -106,6 +122,7 @@
 	}
 	img {
 		margin: auto;
+		animation: picture-hover-out 0.1s;
 	}
 	.img-wrapper img {
 		width: 50%;
@@ -114,6 +131,7 @@
 		margin: 20px;
 	}
 	img:hover {
+		animation: picture-hover-in 0.3s;
 		transform: scale(1.1);
 		-ms-transform: scale(1.1);
 		-moz-transform: scale(1.1);

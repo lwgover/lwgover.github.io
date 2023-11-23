@@ -21,15 +21,10 @@
 </script>
 
 <svelte:window bind:innerWidth={pageWidth} bind:innerHeight={pageHeight} bind:scrollY={scroll}/>
-<Seo title={"Recommend Me a Book! | Lucas Gover"} description={"Recommend Lucas a book!"} keywords={"books, recommend, recommendations, currently reading, read, student, computer science, political theory, political science, science fiction"}/>
+<Seo title={"View Recommendations | Lucas Gover"} description={"View Book Recommendations!"} keywords={"books, recommend, recommendations, currently reading, read, student, computer science, political theory, political science, science fiction"}/>
 <Back/>
 <main id="home">
 	<ViewRecommendations/>
-	<!--
-    <Projects projects={data.projects} />
-    <Awards awards={data.awards} {isMobile} />
-    <Blog posts={data.posts} {isMobile} /> 
-	-->
 </main>
 
 <style>

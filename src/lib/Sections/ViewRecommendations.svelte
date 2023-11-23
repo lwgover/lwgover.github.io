@@ -1,18 +1,27 @@
 <script>
+	import { navigate } from 'svelte-routing';
 	import ViewRecommendations from '$lib/Sections/view_recommendations.svelte';
+	const handleClick = () => {
+		navigate('./book-recommendations');
+	};
 </script>
 
-<section class="book-recommendations">
-	<div class="book-recommendation-container">
+<section class="view-recommendations">
+	<div class="view-recommendation-container">
 		<div class="submission-container">
 			<div class="recommendations-title">Recommended Books</div>
-			<div class="submission-mid-title"><a class='submission-mid-title' href='./book-recommendations'>Recommend one →</a></div>
-			<ViewRecommendations height='60vh'/>
+			<div class="submission-mid-title">
+				<a class="about-item" on:click={handleClick} href="./book-recommendations/">Recommend me a Book →</a>
+			</div>
+			<ViewRecommendations height="60vh" />
 		</div>
 	</div>
 </section>
 
 <style>
+	.about-item {
+		color: #333;
+	}
 	.submission-mid-title {
 		margin: auto;
 		text-align: center;
@@ -20,16 +29,9 @@
 		padding-left: 5vw;
 		padding-right: 5vw;
 		margin: 2vh;
-        color:#333;
+		color: #333;
 	}
-	.submission-subtitle {
-		margin: auto;
-		text-align: center;
-		font-size: 2.5vh;
-		padding-left: 5vw;
-		padding-right: 5vw;
-    }
-	.book-recommendation-container {
+	.view-recommendation-container {
 		background-color: white;
 		width: 600px;
 		height: 92vh;
@@ -51,7 +53,7 @@
 		font-weight: 500;
 	}
 	@media screen and (max-width: 650px) {
-		.book-recommendation-container {
+		.view-recommendation-container {
 			width: 50vh;
 		}
 	}

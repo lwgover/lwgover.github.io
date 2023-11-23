@@ -183,6 +183,7 @@
 		height: 19vh;
 		font-family: var(--font-sans);
 		border-width: 2.5px;
+		overflow:auto
 	}
 	.book-recommendation-container {
 		background-color: white;
