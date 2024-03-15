@@ -5,23 +5,39 @@
             "description": "I have the bad habit of reading too many things at once. Here's what I'm currently reading",
             "books": [
                 {
-                    "title": "The Politics Presidents Make by Stephen Skowronek"
+                    "title": "The Loneliness Files by Athena Dixon"
                 },
                 {
-                    "title": "The Fraud by Zadie Smith"
+                    "title": "Conversations with Friends by Sally Rooney"
                 },
                 {
-                    "title": "The Myth of Sisyphus by Albert Camus"
+                    "title": "Nixonland by Rick Pearlstein"
                 },
                 {
                     "title": "Big Data and Social Science by Ian Foster, Rayid Ghani, Ron S. Jarmin, Frauke Kreuter, and Julia Lane"
                 }
-                
             ]
         },
         {
+            "title":"2024",
+            "description":"All the books I've read so far this year",
+            "books": [
+                {"title":"Neuromancer by William Gibson"},
+                {"title":"This is How you Lose the Time War by Amal El-Mohtar and Max Gladstone"},
+                {"title":"What it Took to Win: A History of the Democratic Party by Michael Kazin"},
+                {"title":"A Memory called Empire by Arkady Marine"},
+                {"title":"How to Know a Person by David Brooks"},
+                {"title":"At the Edge of the Woods by Kathryn Bromwich"},
+                {"title":"Justice by Means of Democracy by Danielle Allen"},
+                {"title":"To Paradise by Hanya Yanagihara"},
+                {"title":"Trilogy by John Fosse"},
+                {"title":"The Tusks of Extinction by Ray Nayler"},
+                {"title":"All About Love by bell hooks"},
+            ]
+        }
+        {
             "title": "2023",
-            "description": "All the books I've read so far this year.",
+            "description": "All the books I read in 2023",
             "books": [
                 {
                     "title": "The Traitor Prince by C. J. Redwine"
@@ -112,6 +128,30 @@
                 },
                 {
                     "title":"The Age of Surveillance Capitalism by Shoshana Zuboff"
+                },
+                {
+                    "title":"The Defining Decade by Meg Jay"
+                },
+                {
+                    "title":"The Uninhabitable Earth by David Wallace-Wells"
+                },
+                {
+                    "title":"Adalaide by Genevieve Wheeler"
+                },
+                {
+                    "title":"Closer baby, Closer by Savannah Brown"
+                },
+                {
+                    "title":"Doppelganger by Naomi Klein"
+                },
+                {
+                    "title":"Liberalism Against Itself by Samuel Moyn"
+                },
+                {
+                    "title":"The Road to Character by David Brooks"
+                },
+                {
+                    "title":"The Fraud by Zadie Smith"
                 }
             ]
         },
