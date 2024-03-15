@@ -5,15 +5,15 @@
 				<img src="./images/me2.jpg" alt="Me!" />
 			</div>
 			<div class="social-icons">
+				<a href="https://github.com/lwgover" target="_blank" rel="noopener noreferrer">
+					<img src="./images/socials/github.svg" alt="github-logo" />
+				</a>
 				<a
 					href="https://www.linkedin.com/in/lucas-gover-828822223/"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
 					<img src="./images/socials/linkedin.svg" alt="linkedin-logo" />
-				</a>
-				<a href="https://github.com/lwgover" target="_blank" rel="noopener noreferrer">
-					<img src="./images/socials/github.svg" alt="github-logo" />
 				</a>
 				<a href="https://instagram.com/lucas.gover" target="_blank" rel="noopener noreferrer">
 					<img src="./images/socials/instagram.svg" alt="instagram-logo" />
@@ -25,11 +25,12 @@
 		<div class="text-card-container">
 			<h2 class='about-title'>About Me</h2>
 			<p id="about-text">
-				I am a recent graduate from the University of Puget Sound, with degrees in
+				I am a recent graduate from the University of Puget Sound, with a double major in
 				Computer Science and Politics & Government, two things I'm really passionate about.
 				Throughout college, I was involved in competitive programming, built strong hall communities
 				as an RA, and developed a love for teaching as a TA, tutor, and instructor. Plus, I worked
-				on research papers in both Artificial Intelligence and Politics. In my free time I love to
+				on research papers in both Artificial Intelligence and Politics. Currently I'm a Junior Analyst at 
+				Clarity Campaign Labs, using data and polling to help elect progressives. In my free time I love to
 				bike, explore new coffee shops, and read - I'm especially into science fiction and politics books.
 			</p>
 			<div class='about-links'>
