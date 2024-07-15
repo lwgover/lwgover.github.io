@@ -9,7 +9,7 @@
 					<img src="./images/socials/github.svg" alt="github-logo" />
 				</a>
 				<a
-					href="https://www.linkedin.com/in/lucas-gover-828822223/"
+					href="https://www.linkedin.com/in/lucas-g-828822223/"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
