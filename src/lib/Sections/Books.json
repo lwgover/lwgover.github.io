@@ -5,17 +5,12 @@
             "description": "I have the bad habit of reading too many things at once. Here's what I'm currently reading",
             "books": [
                 {
-                    "title": "The Loneliness Files by Athena Dixon"
-                },
-                {
-                    "title": "Conversations with Friends by Sally Rooney"
-                },
-                {
-                    "title": "Nixonland by Rick Pearlstein"
+                    "title":"The Words that Remain by Stênio Gardel"
                 },
                 {
                     "title": "Big Data and Social Science by Ian Foster, Rayid Ghani, Ron S. Jarmin, Frauke Kreuter, and Julia Lane"
-                }
+                },
+                {"title": "The Lie Detectives by Sasha Issenberg"}
             ]
         },
         {
@@ -32,7 +27,27 @@
                 {"title":"To Paradise by Hanya Yanagihara"},
                 {"title":"Trilogy by John Fosse"},
                 {"title":"The Tusks of Extinction by Ray Nayler"},
-                {"title":"All About Love by bell hooks"}
+                {"title":"All About Love by bell hooks"},
+                {"title":"Conversations with Friends by Sally Rooney"},
+                {"title":"Ten Low by Stark Holborn"},
+                { "title": "Nixonland by Rick Pearlstein"},
+                {"title": "The Loneliness Files by Athena Dixon"},
+                {"title": "A Love Song for Ricki Wilde by Tia Williams"},
+                {
+                    "title": "Age of Revolutions by Fareed Zakaria"
+                },
+                {
+                    "title": "The Kitchen Curse by Eka Kurniawan"
+                },
+                {
+                    "title": "Idlewild by James Frankie Thomas"
+                },
+                {"title": "Super Communicators by Charles Duhigg"},
+                {"title": "Elenda Knows by Claudia Piñeiro"},
+                {"title": "Girlfriends by Emily Zhou"},
+                {"title": "Canto Contigo by Jonny Garza Villa"},
+                {"title": "Hard to be A God by Arkady Strugatsky and Boris Strugatsky"},
+                {"title": "The Victory Lab by Sasha Issenberg"}
             ]
         },
         {

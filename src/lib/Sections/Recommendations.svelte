@@ -88,6 +88,7 @@
 			</div>
 		{:else}
 			<div class="recommendations-title">Recommend me a Book!</div>
+			<h4 style='text-align: center; font-family: lato; color: white; background-color: red'>Unfortunately, I had to take down the backend database for this, so currently it's not functional. If you want to recommend me a book, email me!</h4>
 
 			<form>
 				<label class="text-input-container">

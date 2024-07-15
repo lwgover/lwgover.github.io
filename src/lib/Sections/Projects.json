@@ -18,14 +18,8 @@
             "title":"Birdsong Deepfakes",
             "tools":["TENSORFLOW", "PYTORCH", "PYTHON", "SIGNAL ANALYSIS"],
             "description":"I recently completed my capstone research project creating generative-adversarial neural networks to generate artificial birdsong. To evaluate the efficacy of this method, my teammates and I explored recurrent neural network and transformer GAN Architectures trained on birdsong scalagrams.",
-            "link":"./pdfs/Birds.pdf"
-        },
-        {
-            "title":"Quiz Website",
-            "tools":["REACT.JS", "NODE.JS","EXPRESS.JS", "MySQL"],
-            "description":"Created a web application for creating and taking quizzes for my Database Management class final project. Designed and optimized front-end that enables users to find and take quizzes. Implemented an efficient back-end to store user-created data and facilitate user queries.",
-            "link":"https://github.com/lwgover/databases_final_project",
-            "image":"./images/Projects/QuizSQL.png"
+            "link":"./pdfs/Birds.pdf",
+            "image":"./images/Projects/BirdScalogram.png"
         },
         {
             "title":"Solar System Lighting Simulation",
@@ -37,7 +31,7 @@
         {
             "title":"Political Sentiment Analysis Research",
             "tools":["NLP","TENSORFLOW", "PYTHON", "PANDAS", "SPSS", "SKLEARN"],
-            "description":"My senior politics thesis research on political bias in Large Language Models. I built and implemented a sentiment analysis model to analyze the political bias of the state-of-the-art large language model GPT-3. My research furthers understanding of the potential societal biases represented in large language models and provides a means of measuring and understanding of these biases.",
+            "description":"My senior politics capstone research on political bias in Large Language Models. I built and implemented a sentiment analysis model to analyze the political bias of the large language model GPT-3. My research furthers understanding of the potential societal biases represented in large language models and provides a means of measuring and understanding of these biases.",
             "link":"./pdfs/PoliticalBias.pdf"
         }
     ]
