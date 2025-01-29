@@ -31,7 +31,7 @@
 				as an RA, and developed a love for teaching as a TA, tutor, and instructor. Plus, I worked
 				on research papers in both Artificial Intelligence and Politics. Currently I'm a Junior Analyst at 
 				Clarity Campaign Labs, using data and polling to help elect progressives. In my free time I love to
-				bike, explore new coffee shops, and read - I'm especially into science fiction and politics books.
+				bike, paint, explore new coffee shops, and read - I'm especially into science fiction and politics books.
 			</p>
 			<div class='about-links'>
 			<a class= 'about-item' href="./books">Check out what I'm reading →</a>
