@@ -1,6 +1,20 @@
 {
     "items":[
         {
+            "title":"Texas Legislature Data Pipeline",
+            "tools":["DBT", "BigQuery", "PREFECT", "PYTHON"],
+            "description":"Streamlines legislative tracking for the Texas Legislature bills, providing quick access to bill information, reducing administrative burden for policy analysts, and helping activists coordinate.",
+            "link":"https://docs.google.com/presentation/d/1P1tJvcrEoZuVvVKXzcQySzcrrrUZRuFbUHUSqihVSms/edit?usp=sharing",
+            "image":"./images/Projects/tx_leg.png"
+        },
+        {
+            "title":"Model Evalation for Political Campaigns",
+            "tools":["D3.js", "HTML", "JAVASCRIPT"],
+            "description":"Built an interactive data exploration using JavaScript and D3.js to illustrate how to compare statistical models for voter targeting. The interactive visualization walks users through key evaluation metrics, helping to demystify how to assess and compare models.",
+            "link":"https://www.lucasgover.com/model-eval",
+            "image":"./images/Projects/model_eval.png"
+        },
+        {
             "title":"American Values Regression Tree",
             "tools":["D3.JS", "REACT.JS", "PANDAS", "FLASK"],
             "description":"Website which visualizes how personal identities can shape political values. Users have the option to select which values and identities they are interested in. These selections are sent to a predictive model to better understand the relationships between them. The website renders this complex data in an easily understandable way, developing an intuitive yet detailed platform that can be used by both laymen and seasoned political scientists.",

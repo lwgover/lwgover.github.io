@@ -26,8 +26,9 @@
 			<h2 class='about-title'>About Me</h2>
 			<p id="about-text">
 I’m a data analyst and researcher with a strong foundation in polling, data, technology, and the political sphere. I graduated from the University of Puget Sound with a double major in Computer Science and Politics & Government, and I’m passionate about how these fields intersect—especially in the service of progressive change. Throughout college, I built my leadership through community and teaching—representing my university in competitive programming competitions, serving as a Resident Assistant for multiple freshman communities, and working as a TA, tutor, and lead instructor.
-
-During the 2024 election cycle, I worked as a data analyst, partnering with political campaigns, nonprofits, and advocacy groups to analyze polling data, identify shifts in public opinion, and support decision-making through dashboards, visualizations, and analysis. Whether I’m working with code, campaigns, or collaborators, I bring technical fluency, a clear analytical lens, and a deep belief in data as a tool for impact.
+</p>
+<p id="about-text">
+During the 2024 election cycle, I worked at Clarity Campaign Labs, partnering with political campaigns, nonprofits, and advocacy groups to analyze polling data, identify shifts in public opinion, and support decision-making through dashboards, visualizations, and analysis. Whether I’m working with code, campaigns, or collaborators, I bring technical fluency, a clear analytical lens, and a deep belief in data as a tool for impact.
 			</p>
 			<div class='about-links'>
 			<a class= 'about-item' href="./books">Check out what I'm reading →</a>
