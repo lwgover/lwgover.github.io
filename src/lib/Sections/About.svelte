@@ -25,13 +25,9 @@
 		<div class="text-card-container">
 			<h2 class='about-title'>About Me</h2>
 			<p id="about-text">
-				I am a recent graduate from the University of Puget Sound, with a double major in
-				Computer Science and Politics & Government, two things I'm really passionate about.
-				Throughout college, I was involved in competitive programming, built strong hall communities
-				as an RA, and developed a love for teaching as a TA, tutor, and instructor. Plus, I worked
-				on research papers in both Artificial Intelligence and Politics. Currently I'm a Junior Analyst at 
-				Clarity Campaign Labs, using data and polling to help elect progressives. In my free time I love to
-				bike, paint, explore new coffee shops, and read - I'm especially into science fiction and politics books.
+I’m a data analyst and researcher with a strong foundation in polling, data, technology, and the political sphere. I graduated from the University of Puget Sound with a double major in Computer Science and Politics & Government, and I’m passionate about how these fields intersect—especially in the service of progressive change. Throughout college, I built my leadership through community and teaching—representing my university in competitive programming competitions, serving as a Resident Assistant for multiple freshman communities, and working as a TA, tutor, and lead instructor.
+
+During the 2024 election cycle, I worked as a data analyst, partnering with political campaigns, nonprofits, and advocacy groups to analyze polling data, identify shifts in public opinion, and support decision-making through dashboards, visualizations, and analysis. Whether I’m working with code, campaigns, or collaborators, I bring technical fluency, a clear analytical lens, and a deep belief in data as a tool for impact.
 			</p>
 			<div class='about-links'>
 			<a class= 'about-item' href="./books">Check out what I'm reading →</a>
