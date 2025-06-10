@@ -5,22 +5,40 @@
             "description": "I have the bad habit of reading too many things at once. Here's what I'm currently reading",
             "books": [
                 {
-                    "title":"The Words that Remain by Stênio Gardel"
-                },
-                {
-                    "title": "Big Data and Social Science by Ian Foster, Rayid Ghani, Ron S. Jarmin, Frauke Kreuter, and Julia Lane"
-                },
-                {"title": "The Lie Detectives by Sasha Issenberg"}
+                    "title": "When the Clock Broke by John Ganz"
+                }
+            ]
+        },
+        {
+            "title": "2025",
+            "description": "All the books I've read so far this year",
+            "books": [
+                {"title": "Autocracy, Inc. by Anne Applebaum"},
+                {"title": "A Last Supper of Queer Apostles by Pedro Lemebel"},
+                {"title": "The Color of Magic by Terry Pratchet"},
+                {"title": "The Siren's Call by Chris Hayes"},
+                {"title": "Rosewater by Tade Thompson"},
+                {"title": "Rosewater: Insurrection by Tade Thompson"},
+                {"title": "Reinventing Political Advertising by Hal Malchow"},
+                {"title": "Rosewater: Redemption by Tade Thompson"},
+                {"title": "Gideon the Ninth by Tamsyn Muir"},
+                {"title": "Harrow the Ninth by Tamsyn Muir"},
+                {"title": "Nona the Ninth by Tamsyn Muir"},
+                {"title": "Evicted by Matthew Desmond"},
+                {"title": "Mordew by Alex Phelby"},
+                {"title": "Abundance by Ezra Klein and Derek Thompson"},
+                {"title": "Where the Axe is Burried by Ray Nayler"},
+                {"title": "A Desolation called peace by Arkady Martine"}
             ]
         },
         {
             "title":"2024",
-            "description":"All the books I've read so far this year",
+            "description":"All the books I read in 2024",
             "books": [
                 {"title":"Neuromancer by William Gibson"},
                 {"title":"This is How you Lose the Time War by Amal El-Mohtar and Max Gladstone"},
                 {"title":"What it Took to Win: A History of the Democratic Party by Michael Kazin"},
-                {"title":"A Memory called Empire by Arkady Marine"},
+                {"title":"A Memory called Empire by Arkady Martine"},
                 {"title":"How to Know a Person by David Brooks"},
                 {"title":"At the Edge of the Woods by Kathryn Bromwich"},
                 {"title":"Justice by Means of Democracy by Danielle Allen"},
@@ -48,6 +66,19 @@
                 {"title": "Canto Contigo by Jonny Garza Villa"},
                 {"title": "Hard to be A God by Arkady Strugatsky and Boris Strugatsky"},
                 {"title": "The Victory Lab by Sasha Issenberg"}
+                ,{"title": "Foundryside by Robert Jackson Bennett"},
+                {"title": "Unexploded Remnants by Elaine Gallagher"},
+                {"title": "Shorefall by Robert Jackson Bennett"},
+                {"title": "The Great Believers by Rebecca Makkai"},
+                {"title": "Locklands by Robert Jackson Bennett"},
+                {"title": "The Adventures of Amina Al-Sirafi by S. A. Chakraborty"},
+                {"title": "Don't Think of an Elephant by George Lakoff"},
+                {"title": "The Left Adrift by Timothy Shenk"},
+                {"title": "Intermezzo by Sally Rooney"},
+                {"title": "The Dispossessed by Ursula K. Le Guin"},
+                {"title": "Bringer of Dust by J.M. Miro"},
+                {"title": "Housemates by Emma Copley Eisenberg"},
+                {"title": "Where Have All the Democrats Gone by John Judis and Ruy Teixeira"}
             ]
         },
         {
